@@ -427,7 +427,7 @@ html {
 /* Dark mode burger a menu */
 @media (prefers-color-scheme: dark) {
   .nav-wrapper {
-    background-color: #1e1e1e;
+    background-color: #121212;
   }
 
   .nav-wrapper nav a {
