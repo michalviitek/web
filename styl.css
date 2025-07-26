@@ -385,3 +385,47 @@ html {
 .about-text a:hover {
   color: #ffe88a;
 }
+
+/* Hamburger button */
+.burger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  padding: 10px;
+}
+
+/* Navigace pro mobily */
+@media (max-width: 768px) {
+  .burger {
+    display: block;
+    z-index: 1001;
+  }
+
+  .nav-wrapper {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    background: #fff;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 100%;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+
+  .nav-wrapper.active {
+    display: flex;
+  }
+
+  .nav-wrapper nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav-wrapper nav a {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+}
+
