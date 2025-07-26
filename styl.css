@@ -308,7 +308,58 @@
 @media (max-width: 500px) {
   .image-container {
     width: 100%;
-    height: auto;
+    height: auto;            /* jak máš */
+    max-height: 60vh;        /* nepřesáhne 60 % výšky okna */
     padding: 0 20px;
   }
+
+  .image-container img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;     /* jistota, že se nedeformuje */
+  }
 }
+
+@media (max-width: 500px) {
+  header {
+    padding: 16px 20px;
+    margin-bottom: 20px;
+  }
+
+  .logo a {
+    font-size: 24px;
+  }
+
+  nav a {
+    font-size: 16px; /* nebo 14px, podle pocitu */
+    margin-left: 0;
+  }
+
+  .nav-wrapper {
+    gap: 12px;
+  }
+}
+
+@media (max-width: 500px) {
+  .gallery-grid {
+    column-count: 1;
+    column-gap: 12px;
+    padding: 0 16px;
+  }
+}
+
+@media (max-width: 500px) {
+  .about-photo img {
+    width: 100%;
+    height: auto;
+  }
+
+  .about-text {
+    font-size: 15px;
+  }
+}
+
+html {
+  font-size: clamp(16px, 2.2vw, 18px);
+}
+
