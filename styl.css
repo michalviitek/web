@@ -1,0 +1,306 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  body {
+    font-family: 'EB Garamond', serif;
+    font-size: 18px;
+    color: #212121;
+    background-color: #fff;
+  }
+  
+  /* Typografie */
+  h1 {
+    font-size: 24px;
+    font-weight: normal;
+    margin-bottom: 20px;
+    color: #212121;
+  }
+  
+  h2 {
+    font-size: 22px;
+    font-weight: normal;
+    margin-bottom: 18px;
+    color: #212121;
+  }
+  
+  h3 {
+    font-size: 18px;
+    font-weight: normal;
+    margin-bottom: 14px;
+    color: #212121;
+  }
+
+  p {
+    font-size: 18px;
+    font-weight: normal;
+    color: #212121;
+  }
+  
+  
+  header {
+    width: 100%;
+    padding: 30px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    margin-bottom: 40px; /* ⬅️ nová mezera dolů */
+  }
+  
+  .logo a {
+    font-family: 'EB Garamond', serif;
+    font-size: 30px;
+    text-decoration: none;
+    color: #212121;
+    text-transform: none;
+  }
+  
+  .nav-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+  
+  nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #212121;
+    font-size: 18px;
+    transition: color 0.3s;
+  }
+  
+  nav a:hover,
+  nav a.active {
+    color: #fddc5c;
+  }
+  
+  .social-icons a {
+    margin-left: 15px;
+    display: inline-block;
+    transition: opacity 0.3s;
+  }
+  
+  .social-icons a:hover {
+    opacity: 0.6;
+  }
+  
+  .social-icons img {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .image-container {
+    width: 600px;
+    height: 550px;
+    overflow: hidden;
+    margin: 0 auto 50px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .image-container img {
+    width: 100%;
+    height: auto;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 40px 0;
+    font-size: 14px;
+    color: #212121;
+    margin-top: auto;
+  }
+  
+  /* Galerie */
+  .gallery-grid {
+    column-count: 3;
+    column-gap: 20px;
+    padding: 0 20px;
+  }
+  
+  /* Běžné tablety nebo menší obrazovky */
+  @media (max-width: 900px) {
+    .gallery-grid {
+      column-count: 2;
+    }
+  }
+  
+  /* Malé mobily */
+  @media (max-width: 500px) {
+    .gallery-grid {
+      column-count: 1;
+    }
+  }
+  
+  
+  
+  .gallery-grid a {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 20px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeUp 0.8s ease forwards;
+  }
+  
+  .gallery-grid a img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: filter 0.3s;
+  }
+  
+  .gallery-grid a img:hover {
+    filter: brightness(40%);
+  }
+  
+  /* Lightbox */
+  .lightbox {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.95);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .lightbox img {
+    max-width: 90vw;
+    max-height: 90vh;
+    margin: auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  }
+  
+  .lightbox:target {
+    display: flex;
+  }
+  
+  /* Animace */
+  @keyframes fadeUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsivita */
+  @media (max-width: 900px) {
+    header {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      gap: 10px;
+    }
+  
+    .nav-wrapper {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      align-items: center;
+      gap: 15px;
+      width: auto;
+    }
+  
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+  
+    nav a {
+      font-size: 16px;
+      margin-left: 0;
+    }
+  
+    .social-icons {
+      display: flex;
+      gap: 10px;
+    }
+  
+    .social-icons a {
+      margin-left: 0;
+    }
+  }
+  
+  
+  
+  
+  .about {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 80px auto;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  
+  main,
+  .gallery,
+  .about,
+  .image-container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 40px;
+    box-sizing: border-box;
+  }
+  
+  section {
+    max-width: 1300px;
+    margin: 0 auto 80px auto;
+    padding: 0 40px;
+    box-sizing: border-box;
+  }  
+
+  .about-section {
+    max-width: 1300px;
+    margin: 0 auto 80px auto;
+    padding: 0 40px;
+    box-sizing: border-box;
+  }
+  
+  .about-wrapper {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start; /* zarovnání nahoře */
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  
+  .about-photo img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+  }
+  
+  .about-text {
+    max-width: 600px;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+  .about-text a {
+    color: #fddc5c;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .about-text a:hover {
+    text-decoration: underline;
+  }
