@@ -341,3 +341,17 @@ html {
     font-size: 15px;
   }
 }
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #121212;
+    color: #f1f1f1;
+  }
+  nav a {
+    color: #f1f1f1;
+  }
+  nav a.active {
+    color: #fddc5c;
+  }
+}
+
