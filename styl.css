@@ -313,6 +313,9 @@ html {
 
 /* Dark mode */
 @media (prefers-color-scheme: dark) {
+  nav a:hover {
+    color: #fddc5c;
+  }
   .about-text,
   .about-text * {
     color: #f1f1f1;
