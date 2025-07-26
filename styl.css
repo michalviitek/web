@@ -68,7 +68,6 @@ header {
   align-items: center;
   gap: 40px;
 }
-}
 
 nav a {
   margin-left: 20px;
@@ -130,6 +129,10 @@ footer {
 
 /* BÄÂĂÂĂĹĄÄšĹžnĂÂÄš  tablety nebo menĂĹĄĂÂĂÂĂÂ­ obrazovky */
 @media (max-width: 900px) {
+  .nav-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+  }
   .gallery-grid {
     column-count: 2;
   }
@@ -403,11 +406,9 @@ html {
   .nav-wrapper nav a {
     font-size: 18px;
     margin: 10px 0;
+  }
 }
-  .nav-wrapper nav a.active {
-  color: #fddc5c;
-}
-}
+
 /* Dark mode burger a menu */
 @media (prefers-color-scheme: dark) {
   .nav-wrapper {
@@ -450,4 +451,16 @@ html {
   justify-content: space-between;
   align-items: center;
   width: 100%;
+}
+
+
+/* AktivnĂ­ odkaz v burger menu */
+.nav-wrapper nav a.active {
+  color: #fddc5c;
+}
+
+@media (prefers-color-scheme: dark) {
+  .nav-wrapper nav a.active {
+    color: #fddc5c;
+  }
 }
