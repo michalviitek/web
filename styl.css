@@ -68,6 +68,7 @@ header {
   align-items: center;
   gap: 40px;
 }
+}
 
 nav a {
   margin-left: 20px;
@@ -402,9 +403,11 @@ html {
   .nav-wrapper nav a {
     font-size: 18px;
     margin: 10px 0;
-  }
 }
-
+  .nav-wrapper nav a.active {
+  color: #fddc5c;
+}
+}
 /* Dark mode burger a menu */
 @media (prefers-color-scheme: dark) {
   .nav-wrapper {
