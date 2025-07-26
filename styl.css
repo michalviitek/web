@@ -329,8 +329,11 @@ html {
   body {
     background-color: #121212;
     color: #f1f1f1;
-  
-  .about-text { color: #f1f1f1; }
+  }
+
+  .about-text {
+    color: #f1f1f1;
+  }
 }
 
   nav a {
