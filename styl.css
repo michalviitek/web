@@ -347,11 +347,30 @@ html {
     background-color: #121212;
     color: #f1f1f1;
   }
+
   nav a {
     color: #f1f1f1;
   }
+
   nav a.active {
     color: #fddc5c;
+    border-bottom: 2px solid #fddc5c;
+  }
+
+  .logo a {
+    color: #f1f1f1;
+  }
+
+  footer {
+    color: #bbb;
+  }
+
+  .gallery-grid a img:hover {
+    filter: brightness(70%);
+  }
+
+  .social-icons img {
+    filter: invert(1);
   }
 }
 
