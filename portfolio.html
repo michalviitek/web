@@ -9,16 +9,22 @@
         <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet" />
         <link rel="stylesheet" href="styl.css" />
       </head>
+    <script>
+  function toggleMenu() {
+    document.getElementById('navMenu').classList.toggle('active');
+  }
+    </script>    
 <body>
 
     <header>
         <div class="logo"><a href="index.html">Michal Vítek</a></div>
-        <div class="nav-wrapper">
-          <nav>
-            <a href="index.html">domů</a>
-            <a href="portfolio.html" class="active">portfolio</a>
-            <a href="omne.html">o mně</a>
-          </nav>
+        <div class="burger" onclick="toggleMenu()">☰</div>
+         <div class="nav-wrapper" id="navMenu">
+              <nav>
+                <a href="index.html">domů</a>
+                <a href="portfolio.html">portfolio</a>
+                <a href="omne.html">o mně</a>
+              </nav>
           <div class="social-icons">
             <a href="https://www.instagram.com/michalviitek" target="_blank"><img src="ikony/instagram.svg" alt="Instagram"></a>
             <a href="https://www.youtube.com/@michalviitek" target="_blank"><img src="ikony/youtube.svg" alt="YouTube"></a>
