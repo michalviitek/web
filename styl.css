@@ -127,39 +127,19 @@ footer {
   padding: 0 20px;
 }
 
-/* BĂÂÄšĹžnÄĹ  tablety nebo menÄšÄÄÂ­ obrazovky */
+/* BÄÂĂÂĂĹĄÄšĹžnĂÂÄš  tablety nebo menĂĹĄĂÂĂÂĂÂ­ obrazovky */
 @media (max-width: 900px) {
   .gallery-grid {
     column-count: 2;
   }
 
   header {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
     padding: 20px;
     gap: 10px;
   }
 
-  .nav-wrapper {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 15px;
-    width: auto;
-  }
-
-  nav {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-  }
-
-  nav a {
-    font-size: 16px;
-    margin-left: 0;
+  .logo a {
+    font-size: 24px;
   }
 
   .social-icons {
@@ -292,7 +272,7 @@ html {
   font-size: clamp(16px, 2.2vw, 18px);
 }
 
-/* OptimalizovanÄĹ  media query pro mobily */
+/* OptimalizovanĂÂÄš  media query pro mobily */
 @media (max-width: 500px) {
   .image-container {
     width: 100%;
@@ -373,7 +353,7 @@ html {
   }
 }
 
-/* --- Burger Menu ZĂĄklad --- */
+/* --- Burger Menu ZÄÄklad --- */
 .burger {
   display: none;
   font-size: 28px;
@@ -381,7 +361,7 @@ html {
   padding: 10px;
 }
 
-/* MobilnĂ­ zobrazenĂ­ burger menu */
+/* MobilnÄÂ­ zobrazenÄÂ­ burger menu */
 @media (max-width: 768px) {
   header {
     flex-direction: column;
@@ -393,7 +373,7 @@ html {
     font-size: 28px;
     cursor: pointer;
     padding: 10px;
-    position: static; /* místo absolute */
+    position: static; /* mĂ­sto absolute */
   }
 
   .nav-wrapper {
@@ -457,7 +437,7 @@ html {
   }
 
   nav a.active {
-    /* odstranÄnĂ­ podtrĹženĂ­ */
+    /* odstranĂÂnÄÂ­ podtrÄšĹženÄÂ­ */
     text-decoration: none;
     border-bottom: none;
   }
