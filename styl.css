@@ -1,4 +1,3 @@
-
 * {
   box-sizing: border-box;
 }
@@ -128,7 +127,7 @@ footer {
   padding: 0 20px;
 }
 
-/* BÄĹžnĂŠ tablety nebo menĹĄĂ­ obrazovky */
+/* BĂÂÄšĹžnÄĹ  tablety nebo menÄšÄÄÂ­ obrazovky */
 @media (max-width: 900px) {
   .gallery-grid {
     column-count: 2;
@@ -293,7 +292,7 @@ html {
   font-size: clamp(16px, 2.2vw, 18px);
 }
 
-/* OptimalizovanĂŠ media query pro mobily */
+/* OptimalizovanÄĹ  media query pro mobily */
 @media (max-width: 500px) {
   .image-container {
     width: 100%;
@@ -354,7 +353,7 @@ html {
 
   nav a.active {
     color: #fddc5c;
-    text-decoration: none;
+    border-bottom: 2px solid #fddc5c;
   }
 
   .logo a {
@@ -374,18 +373,7 @@ html {
   }
 }
 
-.about-text {
-  color: #f1f1f1;
-}
-
-.about-text a {
-  color: #fddc5c;
-}
-
-.about-text a:hover {
-  color: #ffe88a;
-}
-
+/* --- Burger Menu ZĂĄklad --- */
 .burger {
   display: none;
   font-size: 28px;
@@ -393,7 +381,7 @@ html {
   padding: 10px;
 }
 
-/* burger bude viditelný jen na mobilech */
+/* MobilnĂ­ zobrazenĂ­ burger menu */
 @media (max-width: 768px) {
   header {
     position: relative;
@@ -418,6 +406,7 @@ html {
     width: 100%;
     padding: 20px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: background-color 0.3s ease;
   }
 
   .nav-wrapper.active {
@@ -435,3 +424,39 @@ html {
   }
 }
 
+/* Dark mode burger a menu */
+@media (prefers-color-scheme: dark) {
+  .nav-wrapper {
+    background-color: #1e1e1e;
+  }
+
+  .nav-wrapper nav a {
+    color: #f1f1f1;
+  }
+
+  .nav-wrapper nav a:hover {
+    color: #fddc5c;
+  }
+
+  .burger {
+    color: #f1f1f1;
+  }
+
+  .about-text {
+    color: #f1f1f1;
+  }
+
+  .about-text a {
+    color: #fddc5c;
+  }
+
+  .about-text a:hover {
+    color: #ffe88a;
+  }
+
+  nav a.active {
+    /* odstranÄnĂ­ podtrĹženĂ­ */
+    text-decoration: none;
+    border-bottom: none;
+  }
+}
