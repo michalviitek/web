@@ -325,15 +325,7 @@ html {
   }
 }
 
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: #121212;
-    color: #f1f1f1;
-  }
 
-  .about-text {
-    color: #f1f1f1;
-  }
 }
 
   nav a {
@@ -372,6 +364,7 @@ html {
 
 /* MobilnÄÂ­ zobrazenÄÂ­ burger menu */
 @media (max-width: 768px) {
+  .burger { display: block; font-size: 28px; cursor: pointer; padding: 10px; }
   header {
     flex-direction: column;
     align-items: stretch;
@@ -415,11 +408,7 @@ html {
 }
 
 /* Dark mode burger a menu */
-@media (prefers-color-scheme: dark) {
-  .nav-wrapper {
-    background-color: #121212;
-    position: static;
-  }
+
 
   .nav-wrapper nav a {
     color: #f1f1f1;
@@ -464,8 +453,57 @@ html {
   color: #fddc5c;
 }
 
+
+}
+
 @media (prefers-color-scheme: dark) {
+  body {
+    background-color: #121212;
+    color: #f1f1f1;
+  }
+
+  .about-text {
+    color: #f1f1f1;
+  }
+
+  .nav-wrapper nav a {
+    color: #f1f1f1;
+  }
+
   .nav-wrapper nav a.active {
     color: #fddc5c;
+  }
+
+  .logo a {
+    color: #f1f1f1;
+  }
+
+  footer {
+    color: #bbb;
+  }
+
+  .gallery-grid a img:hover {
+    filter: brightness(70%);
+  }
+
+  .social-icons img {
+    filter: invert(1);
+  }
+
+  .burger {
+    color: #f1f1f1;
+  }
+
+  .about-text a {
+    color: #fddc5c;
+  }
+
+  .about-text a:hover {
+    color: #ffe88a;
+  }
+
+  nav a.active {
+    text-decoration: none;
+    border-bottom: none;
   }
 }
