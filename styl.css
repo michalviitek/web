@@ -386,7 +386,6 @@ html {
   color: #ffe88a;
 }
 
-/* Hamburger button */
 .burger {
   display: none;
   font-size: 28px;
@@ -394,10 +393,17 @@ html {
   padding: 10px;
 }
 
-/* Navigace pro mobily */
+/* burger bude viditelný jen na mobilech */
 @media (max-width: 768px) {
+  header {
+    position: relative;
+  }
+
   .burger {
     display: block;
+    position: absolute;
+    top: 30px;
+    right: 20px;
     z-index: 1001;
   }
 
