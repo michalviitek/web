@@ -354,7 +354,7 @@ html {
 
   nav a.active {
     color: #fddc5c;
-    border-bottom: 2px solid #fddc5c;
+    text-decoration: none;
   }
 
   .logo a {
@@ -374,3 +374,14 @@ html {
   }
 }
 
+.about-text {
+  color: #f1f1f1;
+}
+
+.about-text a {
+  color: #fddc5c;
+}
+
+.about-text a:hover {
+  color: #ffe88a;
+}
