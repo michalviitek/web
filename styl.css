@@ -324,8 +324,6 @@ footer {
     display: flex;
   }
 
-  
-
   .nav-wrapper .social-icons {
     justify-content: center;
   }
@@ -408,7 +406,7 @@ nav a {
   nav a,
   .logo a,
   .nav-wrapper a {
-    color: #f1f1f1 !important;
+    color: #f1f1f1;
     background-color: #1e1e1e;
   }
 
