@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Oficiální portfolio Michala Vítka – ukázky fotografií, portrétů a krajiny.">
+  <title>Michal Vítek</title>
+  <link rel="icon" href="ikony/favicon.png" type="image/png" />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styl.css" />
+</head>
+<body>
+
+  <header><header>
+    <div class="logo"><a href="index.html">Michal Vítek</a></div>
+
+    <!-- BURGER TLAČÍTKO -->
+    <button class="burger" aria-label="Menu" aria-expanded="false" aria-controls="nav">
+      ☰
+    </button>
+
+    <div class="nav-wrapper" id="nav">
+      <nav>
+        <a href="index.html">domů</a>
+        <a href="portfolio.html">portfolio</a>
+        <a href="omne.html">o mně</a>
+      </nav>
+      <div class="social-icons">
+        <a href="https://www.instagram.com/michalviitek" target="_blank"><img src="ikony/instagram.svg" alt="Instagram"></a>
+        <a href="https://www.youtube.com/@michalviitek" target="_blank"><img src="ikony/youtube.svg" alt="YouTube"></a>
+      </div>
+    </div>
+  </header></header>
+
+  <main>
+    <div class="image-container">
+        <img src="obrazky/portfolio/portfolio8.jpeg" alt="Ukázka z portfolia – fotografie č. 1">
+      </div>
+  </main>
+
+  <footer>
+    &copy; 2001 Michal Vítek
+  </footer>
+
+
+<script>
+  const burger = document.querySelector('.burger');
+  const nav = document.querySelector('.nav-wrapper');
+
+  burger.addEventListener('click', () => {
+    const isOpen = nav.classList.toggle('open');
+    burger.setAttribute('aria-expanded', isOpen);
+  });
+</script>
+
+<script>
+  const currentPage = location.pathname.split("/").pop() || "index.html";
+  document.querySelectorAll('nav a').forEach(link => {
+    if (link.getAttribute("href") === currentPage) {
+      link.classList.add("active");
+    }
+  });
+</script>
+
+</body>
+
+</html>
+

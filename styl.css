@@ -1,0 +1,446 @@
+/* === ZÁKLADNÍ NASTAVENÍ === */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: clamp(16px, 2.2vw, 18px);
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'EB Garamond', serif;
+  font-size: 18px;
+  color: #1e1e1e;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* === TYPOGRAFIE === */
+h1, h2, h3, p {
+  color: #1e1e1e;
+  font-weight: normal;
+}
+
+h1 { font-size: 24px; margin-bottom: 20px; }
+h2 { font-size: 22px; margin-bottom: 18px; }
+h3 { font-size: 18px; margin-bottom: 14px; }
+p   { font-size: 18px; }
+
+/* === HLAVIČKA A NAVIGACE === */
+header {
+  width: 100%;
+  padding: 30px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.logo a {
+  font-size: 30px;
+  text-decoration: none;
+  color: #1e1e1e;
+}
+
+.nav-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+nav a {
+  font-size: 18px;
+  margin-left: 20px;
+  text-decoration: none;
+  color: #1e1e1e;
+  transition: color 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+  color: #fddc5c;
+}
+
+/* === SOCIÁLNÍ IKONY === */
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icons a {
+  display: inline-block;
+  transition: opacity 0.3s;
+}
+
+.social-icons a:hover {
+  opacity: 0.6;
+}
+
+.social-icons img {
+  width: 20px;
+  height: 20px;
+}
+
+/* === OBSAH A OBECNÉ BLOKY === */
+main,
+section,
+.gallery,
+.about,
+.image-container,
+.about-section {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+
+.image-container {
+  width: 600px;
+  height: 550px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+}
+
+/* === ABOUT SEKCIA === */
+.about {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 80px;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.about-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.about-photo img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.about-text {
+  max-width: 600px;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.about-text a {
+  color: #fddc5c;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+
+/* === GALERIE === */
+.gallery-grid {
+  column-count: 3;
+  column-gap: 20px;
+  padding: 0 20px;
+}
+
+.gallery-grid a {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 20px;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 0.8s ease forwards;
+}
+
+.gallery-grid a img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: filter 0.3s;
+}
+
+.gallery-grid a img:hover {
+  filter: brightness(40%);
+}
+
+/* === LIGHTBOX === */
+.lightbox {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.95);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.lightbox img {
+  max-width: 90vw;
+  max-height: 90vh;
+  margin: auto;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.lightbox:target {
+  display: flex;
+}
+
+/* === PATIČKA === */
+footer {
+  text-align: center;
+  padding: 40px 0;
+  font-size: 14px;
+  color: #1e1e1e;
+  margin-top: auto;
+}
+
+/* === ANIMACE === */
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* === MEDIA QUERIES === */
+
+/* Tablety a menší obrazovky */
+@media (max-width: 900px) {
+  .gallery-grid {
+    column-count: 2;
+  }
+
+  header {
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 10px;
+  }
+
+  .nav-wrapper {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  nav {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  nav a {
+    font-size: 16px;
+    margin-left: 0;
+  }
+
+  .social-icons a {
+    margin-left: 0;
+  }
+}
+
+/* Telefony */
+@media (max-width: 500px) {
+  .image-container {
+    width: 100%;
+    height: auto;
+    max-height: 60vh;
+    padding: 0 20px;
+  }
+
+  header {
+    padding: 16px 20px;
+    margin-bottom: 20px;
+  }
+
+  .logo a {
+    font-size: 24px;
+  }
+
+  .gallery-grid {
+    column-count: 1;
+    column-gap: 12px;
+    padding: 0 16px;
+  }
+
+  .about-photo img {
+    width: 100%;
+    height: auto;
+  }
+
+  .about-text {
+    font-size: 15px;
+  }
+}
+
+/* Dark mode */
+
+
+
+/* === BURGER MENU === */
+.burger {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: #1e1e1e;
+}
+
+@media (max-width: 768px) {
+  .burger {
+    display: block;
+    z-index: 1001;
+  }
+
+  .nav-wrapper {
+    display: none;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 20px;
+    gap: 20px;
+    position: absolute;
+    top: 80px;
+    right: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+  }
+
+  .nav-wrapper.open {
+    display: flex;
+  }
+
+  
+
+  .nav-wrapper .social-icons {
+    justify-content: center;
+  }
+}
+
+/* DARK MODE burger menu */
+@media (prefers-color-scheme: dark) {
+  .burger {
+    color: #f1f1f1;
+  }
+
+  @media (max-width: 768px) {
+    .nav-wrapper {
+      background-color: #1e1e1e;
+    }
+    .nav-wrapper a {
+      color: #f1f1f1;
+    }
+  }
+}
+
+
+
+  
+
+  @media (max-width: 768px) {
+    
+  }
+
+
+
+.nav-wrapper nav {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+nav a {
+  font-size: 18px;
+  margin-left: 20px;
+  text-decoration: none;
+  color: #1e1e1e;
+  transition: color 0.3s;
+}
+
+@media (max-width: 768px) {
+  .nav-wrapper nav {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  nav a {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .gallery-grid {
+    padding: 0 8px;
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  .nav-wrapper {
+    z-index: 1001;
+    position: absolute;
+  }
+}
+
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #1e1e1e;
+    color: #f1f1f1;
+  }
+
+  nav a,
+  .logo a,
+  .nav-wrapper a {
+    color: #f1f1f1 !important;
+    background-color: #1e1e1e;
+  }
+
+  nav a.active,
+  nav a:hover,
+  .nav-wrapper a.active,
+  .nav-wrapper a:hover {
+    color: #fddc5c;
+  }
+
+  h1, h2, h3, p {
+    color: #f1f1f1;
+    font-weight: normal;
+  }
+
+  footer {
+    color: #f1f1f1;
+  }
+
+  .gallery-grid a img:hover {
+    filter: brightness(70%);
+  }
+
+  .social-icons img {
+    filter: invert(1);
+  }
+
+  .burger {
+    color: #f1f1f1;
+  }
+
+  .nav-wrapper {
+    background-color: #1e1e1e;
+  }
+}
