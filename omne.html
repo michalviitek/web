@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Oficiální portfolio Michala Vítka – ukázky fotografií, portrétů a krajiny.">
+  <title>O mně – Michal Vítek</title>
+  <link rel="icon" href="ikony/favicon.png" type="image/png" />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styl.css" />
+</head>
+<body>
+
+  <header>
+    <div class="logo"><a href="index.html">Michal Vítek</a></div>
+
+    <!-- BURGER TLAČÍTKO -->
+    <button class="burger" aria-label="Menu" aria-expanded="false" aria-controls="nav">
+      ☰
+    </button>
+
+    <div class="nav-wrapper" id="nav">
+      <nav>
+        <a href="index.html">domů</a>
+        <a href="portfolio.html">portfolio</a>
+        <a href="omne.html">o mně</a>
+        <a href="texty.html">texty</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="about-section">
+      <div class="about-wrapper">
+        <div class="about-photo">
+          <img src="obrazky/1.jpg" alt="Portrét Michala Vítka">
+        </div>
+        <div class="about-text">
+          <p>Jsem Michal Vítek a tyhle stránky slouží jako moje online portfolio. Fotce jsem se začal věnovat skrz polaroid a mojí první kameru Sx-70. Polaroid mi otevřel dveře do světa analogové fotografie, přičemž dneska se věnuju především 35mm formátu.</p>
+          <p>Moje hlavní zaměření je cestovní, dokumentární a street fotografie, dříve jsem aktivněji fotil i portrétní projekty.</p>
+          <p>Pro nabídky spolupráce mě kontaktujte na <a href="mailto:michalviitek@gmail.com">michalviitek@gmail.com</a></p>
+
+          <!-- SOCIÁLNÍ IKONY POD TEXTEM -->
+          <div class="about-social">
+            <a href="https://www.instagram.com/michalviitek" target="_blank">
+              <img src="ikony/instagram.svg" alt="Instagram">
+            </a>
+            <a href="https://www.youtube.com/@michalviitek" target="_blank">
+              <img src="ikony/youtube.svg" alt="YouTube">
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2001 Michal Vítek
+  </footer>
+
+  <script>
+    const burger = document.querySelector('.burger');
+    const nav = document.querySelector('.nav-wrapper');
+    burger.addEventListener('click', () => {
+      const isOpen = nav.classList.toggle('open');
+      burger.setAttribute('aria-expanded', isOpen);
+    });
+
+    const currentPage = location.pathname.split("/").pop() || "index.html";
+    document.querySelectorAll('nav a').forEach(link => {
+      if (link.getAttribute("href") === currentPage) {
+        link.classList.add("active");
+      }
+    });
+  </script>
+
+</body>
+</html>
