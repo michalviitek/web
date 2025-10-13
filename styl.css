@@ -236,45 +236,15 @@ footer {
 
 /* === TMAVÝ REŽIM === */
 @media (prefers-color-scheme: dark) {
-  body {
-    background-color: #1e1e1e;
-    color: #f1f1f1;
-  }
-
-  nav a,
-  .logo a {
-    color: #f1f1f1;
-  }
-
-  nav a.active,
-  nav a:hover {
-    color: #fddc5c;
-  }
-
-  footer {
-    color: #f1f1f1;
-  }
-
-  .filter-btn {
-    color: #f1f1f1;
-  }
-
-  .filter-btn.active,
-  .filter-btn:hover {
-    color: #fddc5c;
-  }
-
-  .burger {
-    color: #f1f1f1;
-  }
-
-  .nav-wrapper {
-    background-color: #1e1e1e;
-  }
-
-  .nav-wrapper.open {
-    background-color: #1e1e1e;
-  }
+  body { background-color: #1e1e1e; color: #f1f1f1; }
+  nav a, .logo a { color: #f1f1f1; }
+  nav a.active, nav a:hover { color: #fddc5c; }
+  footer { color: #f1f1f1; }
+  .filter-btn { color: #f1f1f1; }
+  .filter-btn.active, .filter-btn:hover { color: #fddc5c; }
+  .burger { color: #f1f1f1; }
+  .nav-wrapper { background-color: #1e1e1e; }
+  .nav-wrapper.open { background-color: #1e1e1e; }
 }
 
 /* === SKRYTÝ TEXT PRO SEO === */
@@ -288,4 +258,35 @@ footer {
   clip: rect(0 0 0 0);
   white-space: nowrap;
   border: 0;
+}
+
+/* === RESPONZIVITA === */
+
+/* Tablety a menší desktop */
+@media (max-width: 1200px) {
+  header { padding: 25px 40px; }
+  .image-container { width: 80%; height: auto; margin-bottom: 60px; }
+  .gallery-grid { grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); }
+}
+
+/* Malé tablety a velké mobily */
+@media (max-width: 768px) {
+  header { flex-direction: column; align-items: flex-start; gap: 20px; padding: 20px; }
+  .nav-wrapper { gap: 20px; flex-wrap: wrap; }
+  .burger { display: block; }
+  nav { display: none; flex-direction: column; width: 100%; gap: 15px; }
+  .nav-wrapper.open nav { display: flex; }
+  .image-container { width: 100%; height: auto; margin-bottom: 40px; }
+  .gallery-grid { grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 15px; }
+  main, section { padding: 0 20px; }
+}
+
+/* Malé mobily */
+@media (max-width: 480px) {
+  header { padding: 15px; }
+  .logo a { font-size: 24px; }
+  nav a { font-size: 16px; }
+  .burger { font-size: 24px; }
+  .gallery-grid { grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 10px; }
+  .filter-btn { padding: 6px 12px; font-size: 14px; }
 }
