@@ -130,7 +130,7 @@ section,
   display: flex;
   align-items: stretch;
   justify-content: center;
-  gap: 60px; /* menší mezera mezi fotkou a textem */
+  gap: 40px; /* zmenšená mezera mezi fotkou a textem */
   width: 100%;
   max-width: 1200px;
 }
@@ -157,7 +157,7 @@ section,
 }
 
 .about-text p {
-  font-size: 17px; /* mírně větší text pro mobilní displeje */
+  font-size: 17px;
 }
 
 .about-text a {
@@ -188,14 +188,14 @@ section,
 
 /* === GALERIE === */
 .gallery-section {
-  margin-top: 60px;
+  margin-top: 40px; /* zmenšena mezera mezi hlavičkou a filtry */
 }
 
 .gallery-filter {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 15px;
+  gap: 10px;
   margin-bottom: 40px;
 }
 
@@ -308,81 +308,10 @@ footer {
   border: none;
 }
 
-footer p {
-  margin: 0;
-  line-height: 1.6;
-}
-
 /* === RESPONSIVE === */
-@media (max-width: 900px) {
-  .gallery-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  header {
-    flex-wrap: wrap;
-    padding: 20px;
-    gap: 10px;
-  }
-
-  .about-wrapper {
-    flex-direction: column;
-    align-items: center;
-    gap: 30px; /* menší mezera */
-    padding: 0 20px;
-  }
-
-  .about-photo img {
-    max-height: 400px;
-  }
-
-  .about-text {
-    text-align: center;
-  }
-
-  .about-social {
-    justify-content: center;
-  }
-}
-
 @media (max-width: 768px) {
-  /* Úvodní fotka na index */
-  .image-container {
-    width: 100%;
-    max-width: none;
-    height: auto;
-    margin-top: 60px; /* posunutá níž */
-    margin-bottom: 30px;
-  }
 
-  .image-container img {
-    width: 100%;
-    height: auto;
-    object-fit: contain;
-  }
-
-  main,
-  section,
-  .about-wrapper,
-  .gallery-section {
-    padding: 0 15px;
-  }
-
-  .about-photo img {
-    max-height: 50vh; /* větší než předtím */
-  }
-
-  .about-text p {
-    font-size: 16px;
-  }
-
-  /* Filtry galerie na 2 řádky */
-  .gallery-filter {
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 10px;
-  }
-
+  /* Burger menu pod sebe */
   .burger {
     display: block;
   }
@@ -393,21 +322,71 @@ footer p {
 
   .nav-wrapper.open {
     display: flex !important;
-    flex-direction: column; /* položky pod sebou */
+    flex-direction: column;
     position: absolute;
-    top: 80px;
+    top: 70px;
     right: 20px;
     background-color: #fff;
-    padding: 20px;
-    gap: 20px;
+    padding: 15px;
+    gap: 15px;
     box-shadow: 0 8px 20px rgba(0,0,0,0.2);
     border-radius: 8px;
     z-index: 1001;
   }
 
-  .lightbox-content-wrapper {
-    max-width: 85%;
-    max-height: 45vh;
+  /* Index fotka */
+  .image-container {
+    width: 100%;
+    margin-top: 60px;
+  }
+
+  .image-container img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+
+  /* O mně fotka a text */
+  .about-wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; /* menší mezera */
+    padding: 0 15px;
+  }
+
+  .about-photo img {
+    max-height: 50vh;
+  }
+
+  .about-text p {
+    font-size: 17px;
+    text-align: center;
+  }
+
+  .about-social {
+    justify-content: center;
+  }
+
+  /* Galerie filtry – 2 řádky, 3 nahoře, 2 dole */
+  .gallery-filter {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
+
+  .filter-btn:nth-child(1),
+  .filter-btn:nth-child(2),
+  .filter-btn:nth-child(3) {
+    flex-basis: 33%;
+    text-align: center;
+  }
+
+  .filter-btn:nth-child(4),
+  .filter-btn:nth-child(5) {
+    flex-basis: 50%;
+    text-align: center;
   }
 }
 
