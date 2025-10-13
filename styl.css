@@ -345,9 +345,10 @@ footer p {
   /* === ÚVODNÍ FOTKA NA MOBIL === */
   .image-container {
     width: 100%;
-    max-width: 720px;
+    max-width: none;
     height: auto;
     margin-top: 20px;
+    margin-bottom: 30px;
   }
 
   .image-container img {
@@ -374,7 +375,7 @@ footer p {
 
   .nav-wrapper {
     display: none;
-    flex-direction: column; /* položky pod sebou */
+    flex-direction: column;
     position: absolute;
     top: 70px;
     right: 20px;
@@ -407,6 +408,37 @@ footer p {
   .lightbox-content-wrapper {
     max-width: 85%;
     max-height: 45vh;
+  }
+}
+
+/* === EXTRA MALÉ TELEFONY (≤480px) === */
+@media (max-width: 480px) {
+  .image-container {
+    max-height: 90vh;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  .about-text p {
+    font-size: 16px;
+  }
+
+  .burger {
+    font-size: 24px;
+  }
+
+  .nav-wrapper {
+    padding: 15px;
+    gap: 15px;
+  }
+
+  .gallery-filter {
+    gap: 10px;
+  }
+
+  .filter-btn {
+    padding: 6px 12px;
+    font-size: 14px;
   }
 }
 
