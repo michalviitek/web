@@ -5,17 +5,14 @@
   box-sizing: border-box;
 }
 
-html,
-body {
+html {
   font-size: clamp(16px, 2vw, 18px);
   height: 100%;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  overflow-x: hidden; /* fix horizontální scroll */
 }
 
 body {
+  margin: 0;
+  padding: 0;
   font-family: 'EB Garamond', serif;
   font-size: 18px;
   color: #1e1e1e;
@@ -24,6 +21,7 @@ body {
   flex-direction: column;
   min-height: 100vh;
   transition: background-color 0.3s ease, color 0.3s ease;
+  overflow-x: hidden; /* fix pro horizontální scroll */
 }
 
 /* === TYPOGRAFIE === */
@@ -62,7 +60,6 @@ header {
   gap: 40px;
 }
 
-/* === NAVIGACE === */
 nav {
   display: flex;
   align-items: center;
@@ -89,11 +86,6 @@ nav a.active {
   font-size: 28px;
   cursor: pointer;
   color: inherit;
-  position: absolute;
-  top: 50%;
-  right: 20px;
-  transform: translateY(-50%);
-  z-index: 1000;
 }
 
 /* === OBSAH === */
@@ -109,7 +101,6 @@ section,
 /* === ÚVODNÍ FOTKA (index) === */
 .image-container {
   width: 600px;
-  max-width: 100%;
   height: 550px;
   overflow: hidden;
   display: flex;
@@ -157,7 +148,6 @@ section,
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 20px;
-  max-width: 100%;
 }
 
 .gallery-item {
@@ -301,16 +291,7 @@ footer {
   border: 0;
 }
 
-/* === RESPONSIVITA === */
-@media (max-width: 1024px) {
-  header {
-    padding: 20px 30px;
-  }
-  h1 { font-size: 22px; }
-  h2 { font-size: 20px; }
-  h3 { font-size: 16px; }
-}
-
+/* === RESPONZIVITA PRO BURGER MENU === */
 @media (max-width: 768px) {
   .burger {
     display: block;
@@ -320,7 +301,7 @@ footer {
     display: none;
     flex-direction: column;
     gap: 20px;
-    background-color: inherit;
+    background-color: #fff; /* pevné pozadí */
     position: absolute;
     top: 100%;
     right: 0;
@@ -334,53 +315,9 @@ footer {
     display: flex;
   }
 
-  .image-container {
-    width: 100%;
-    height: auto;
-    margin-bottom: 40px;
-  }
-
-  .gallery-grid {
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    gap: 15px;
-  }
-
-  .gallery-filter {
-    gap: 10px;
-    margin-bottom: 30px;
-  }
-}
-
-@media (max-width: 480px) {
-  header {
-    padding: 10px 15px;
-  }
-
-  .logo a {
-    font-size: 24px;
-  }
-
-  .burger {
-    font-size: 26px;
-  }
-
-  nav {
-    width: 180px;
-    padding: 15px;
-    gap: 15px;
-  }
-
-  .gallery-grid {
-    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
-    gap: 10px;
-  }
-
-  .gallery-filter {
-    gap: 8px;
-    margin-bottom: 20px;
-  }
-
-  .image-container {
-    margin-bottom: 30px;
+  @media (prefers-color-scheme: dark) {
+    nav {
+      background-color: #1e1e1e;
+    }
   }
 }
