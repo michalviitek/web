@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Moje portfolio a webové stránky">
+    <meta name="keywords" content="portfolio, web, texty, o mně">
+    <title>Domů | Michal Vítek</title>
+    <link rel="icon" type="image/png" href="ikony/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo"><a href="index.html">Michal Vítek</a></div>
+            <nav>
+                <ul class="menu">
+                    <li><a href="index.html" class="active">Domů</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="texty.html">Texty</a></li>
+                    <li><a href="o-mne.html">O mně</a></li>
+                </ul>
+                <div class="burger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Pouze obrázek -->
+        <img src="obrazky/portfolio/0037.jpg" alt="Ukázková fotografie" class="hero-image">
+    </main>
+
+    <footer>
+        <p>© 2001 Michal Vítek</p>
+    </footer>
+
+    <script>
+        const burger = document.querySelector('.burger');
+        const menu = document.querySelector('.menu');
+        burger.addEventListener('click', () => { menu.classList.toggle('show'); });
+    </script>
+</body>
+</html>

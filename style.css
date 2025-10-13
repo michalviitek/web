@@ -1,0 +1,175 @@
+/* ============================
+   Globální styl
+============================ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%; /* nutné pro flex layout */
+}
+
+body {
+    font-family: 'EB Garamond', serif;
+    line-height: 1.6;
+    background-color: #fff;
+    color: #1e1e1e;
+    transition: background-color 0.3s, color 0.3s;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ============================
+   Dark mode
+============================ */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #1e1e1e;
+        color: #fff;
+    }
+}
+
+/* ============================
+   Header
+============================ */
+header {
+    width: 100%;
+    background-color: inherit;
+    padding: 1rem 2rem;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: 400; /* navigace a název nejsou tučné */
+    font-size: 1.5rem;
+}
+
+/* Menu */
+nav {
+    position: relative;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: 400; /* navigace a název nejsou tučné */
+    transition: color 0.3s;
+}
+
+.menu li a:hover,
+.menu li a.active {
+    color: #fddc5c;
+}
+
+/* Burger menu */
+.burger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: currentColor;
+    transition: all 0.3s;
+}
+
+/* ============================
+   Sekce stránky
+============================ */
+main {
+    flex: 1; /* hlavní obsah zabírá volný prostor pro footer */
+    display: flex;
+    justify-content: center; /* horizontálně */
+    align-items: center;     /* vertikálně */
+}
+
+.hero, .about, .portfolio, .texts, .about-me {
+    text-align: center;
+    padding: 4rem 1rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.hero h1, .portfolio h1, .texts h1, .about-me h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p, .about p, .portfolio p, .texts p, .about-me p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+/* Obrázek pro index */
+.hero-image {
+    width: 40%; /* desktop */
+    height: auto;
+}
+
+/* ============================
+   Footer
+============================ */
+footer {
+    text-align: center;
+    padding: 1rem 2rem;
+    font-size: 0.9rem;
+    color: inherit;
+    background-color: inherit;
+}
+
+/* ============================
+   Responzivita
+============================ */
+@media (max-width: 768px) {
+    .menu {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background-color: #fff;
+        color: #1e1e1e;
+        flex-direction: column;
+        width: 200px;
+        display: none;
+        padding: 1rem;
+        gap: 1rem;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    @media (prefers-color-scheme: dark) {
+        .menu {
+            background-color: #1e1e1e;
+            color: #fff;
+        }
+    }
+
+    .menu.show {
+        display: flex;
+    }
+
+    .burger {
+        display: flex;
+    }
+
+    /* Obrázek se přizpůsobí menším obrazovkám */
+    .hero-image {
+        width: 90%;
+    }
+}
