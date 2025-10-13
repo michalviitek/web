@@ -30,6 +30,11 @@ h1, h2, h3, p {
   color: inherit;
 }
 
+h1 { font-size: 24px; margin-bottom: 20px; }
+h2 { font-size: 22px; margin-bottom: 18px; }
+h3 { font-size: 18px; margin-bottom: 14px; }
+p   { font-size: 18px; line-height: 1.7; }
+
 /* === HLAVIČKA === */
 header {
   width: 100%;
@@ -45,6 +50,7 @@ header {
   text-decoration: none;
   color: inherit;
   font-weight: 400;
+  white-space: nowrap;
 }
 
 .nav-wrapper {
@@ -81,29 +87,106 @@ nav a.active {
   color: inherit;
 }
 
-.nav-wrapper.open {
-  display: flex !important;
-  flex-direction: column;
-  position: absolute;
-  top: 80px;
-  right: 20px;
-  background-color: #fff;
-  padding: 20px;
-  gap: 20px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
-  border-radius: 8px;
-  z-index: 1001;
-}
-
-/* === OBSAH A GALERIE === */
+/* === OBSAH === */
 main,
-section {
+section,
+.gallery,
+.image-container,
+.about-section {
   max-width: 1300px;
   margin: 0 auto;
   padding: 0 40px;
   box-sizing: border-box;
 }
 
+/* === ÚVODNÍ FOTKA (index) === */
+.image-container {
+  width: 600px;
+  height: 550px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 80px;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 0;
+}
+
+/* === O MNĚ === */
+.about-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+  margin-bottom: 80px;
+}
+
+.about-wrapper {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  gap: 100px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.about-photo {
+  flex: 0 0 380px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.about-photo img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  max-height: 80vh;
+}
+
+.about-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 1.6;
+}
+
+.about-text p {
+  font-size: 16px; /* stabilní velikost textu */
+}
+
+.about-text a {
+  color: #fddc5c;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.about-text a:hover {
+  color: #dcb700;
+}
+
+.about-social {
+  margin-top: 30px;
+  display: flex;
+  gap: 20px;
+}
+
+.about-social img {
+  width: 22px;
+  height: 22px;
+  transition: opacity 0.3s;
+}
+
+.about-social img:hover {
+  opacity: 0.6;
+}
+
+/* === GALERIE === */
 .gallery-section {
   margin-top: 60px;
 }
@@ -124,6 +207,7 @@ section {
   cursor: pointer;
   font-family: 'EB Garamond', serif;
   transition: color 0.3s;
+  color: inherit;
 }
 
 .filter-btn.active,
@@ -151,6 +235,7 @@ section {
   height: 100%;
   object-fit: cover;
   transition: transform 0.3s ease, filter 0.3s ease;
+  border-radius: 0;
 }
 
 .gallery-item:hover img {
@@ -170,6 +255,287 @@ section {
 }
 
 /* === LIGHTBOX === */
+.lightbox {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.8);
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 999;
+  cursor: pointer;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.lightbox.active {
+  display: flex;
+}
+
+.lightbox-content-wrapper {
+  position: relative;
+  display: inline-block;
+  max-width: 90%;
+  max-height: 90%;
+}
+
+.lightbox-content {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+
+.lightbox-photo-name {
+  color: #fddc5c;
+  position: absolute;
+  bottom: -30px;
+  right: 0;
+  font-family: 'EB Garamond', serif;
+  font-size: 16px;
+}
+
+/* === PATIČKA === */
+footer {
+  text-align: center;
+  font-size: 14px;
+  padding: 40px 0 30px;
+  color: #555;
+  margin-top: auto;
+  border: none;
+}
+
+footer p {
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 900px) {
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  header {
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 10px;
+  }
+
+  .about-wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px; /* zmenšená mezera mezi fotkou a textem */
+    padding: 0 20px;
+  }
+
+  .about-photo img {
+    max-height: 400px;
+  }
+
+  .about-text {
+    text-align: center;
+  }
+
+  .about-social {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .image-container {
+    width: 100%;
+    max-width: none;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+
+  .image-container img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+
+  main,
+  section,
+  .about-wrapper,
+  .gallery-section {
+    padding: 0 20px;
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .burger {
+    display: block;
+  }
+
+  .nav-wrapper {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    background-color: #fff;
+    padding: 20px;
+    gap: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    border-radius: 8px;
+    z-index: 1001;
+  }
+
+  .nav-wrapper.open {
+    display: flex;
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .gallery-filter {
+    margin-top: 5px;
+    margin-bottom: 15px;
+    gap: 10px;
+  }
+
+  .filter-btn {
+    padding: 6px 12px;
+    font-size: 14px;
+  }
+
+  .lightbox-content-wrapper {
+    max-width: 85%;
+    max-height: 45vh;
+  }
+}
+
+@media (max-width: 480px) {
+  .image-container {
+    max-height: 90vh;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+
+  .about-text p {
+    font-size: 14px; /* stabilní text, nepřehnaně měnící se */
+  }
+
+  .about-wrapper {
+    gap: 20px; /* ještě menší mezera mezi textem a fotkou */
+  }
+
+  .about-photo img {
+    max-height: 45vh;
+  }
+
+  .burger {
+    font-size: 24px;
+  }
+
+  .nav-wrapper {
+    padding: 15px;
+    gap: 15px;
+  }
+
+  .filter-btn {
+    padding: 4px 8px;
+    font-size: 12px;
+  }
+}
+
+/* === DARK MODE === */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #1e1e1e;
+    color: #f1f1f1;
+  }
+
+  nav a,
+  .logo a {
+    color: #f1f1f1;
+  }
+
+  nav a.active,
+  nav a:hover {
+    color: #fddc5c;
+  }
+
+  footer {
+    color: #f1f1f1;
+  }
+
+  .filter-btn {
+    color: #f1f1f1;
+  }
+
+  .filter-btn.active,
+  .filter-btn:hover {
+    color: #fddc5c;
+  }
+
+  .burger {
+    color: #f1f1f1;
+  }
+
+  .nav-wrapper {
+    background-color: #1e1e1e;
+  }
+
+  .nav-wrapper.open {
+    background-color: #1e1e1e;
+  }
+
+  .about-social img {
+    filter: invert(1);
+  }
+}
+
+/* === LOGO RESPONSIVITA === */
+@media (max-width: 768px) {
+  .logo a {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo a {
+    font-size: 22px;
+  }
+}
+
+/* === SKRYTÝ TEXT PRO SEO === */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.gallery-item {
+  position: relative;
+}
+.gallery-item .photo-name {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  font-family: 'EB Garamond', serif;
+  font-size: 14px;
+  color: #fddc5c;
+  pointer-events: none;
+}
+
+/* --- Lightbox a název pod fotkou --- */
 .lightbox {
   display: none;
   position: fixed;
@@ -207,71 +573,9 @@ section {
 
 .lightbox-photo-name {
   color: #fddc5c;
-  position: absolute;
-  bottom: -30px;
-  right: 0;
   font-family: 'EB Garamond', serif;
   font-size: 16px;
-}
-
-/* === PATIČKA === */
-footer {
-  text-align: center;
-  font-size: 14px;
-  padding: 40px 0 30px;
-  color: #555;
-  margin-top: auto;
-}
-
-/* === DARK MODE === */
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: #1e1e1e;
-    color: #f1f1f1;
-  }
-
-  nav a,
-  .logo a {
-    color: #f1f1f1;
-  }
-
-  nav a.active,
-  nav a:hover {
-    color: #fddc5c;
-  }
-
-  .burger {
-    color: #f1f1f1;
-  }
-
-  .nav-wrapper,
-  .nav-wrapper.open {
-    background-color: #1e1e1e;
-  }
-
-  .filter-btn {
-    color: #f1f1f1;
-  }
-
-  .filter-btn.active,
-  .filter-btn:hover {
-    color: #fddc5c;
-  }
-
-  footer {
-    color: #f1f1f1;
-  }
-}
-
-/* === SKRYTÝ TEXT PRO SEO === */
-.visually-hidden {
   position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
-  white-space: nowrap;
-  border: 0;
+  bottom: -24px;
+  right: 0;
 }
