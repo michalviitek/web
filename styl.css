@@ -143,9 +143,9 @@ section,
 
 .about-photo img {
   width: 100%;
-  height: auto;        
-  object-fit: contain; 
-  max-height: 80vh;    
+  height: auto;
+  object-fit: contain;
+  max-height: 80vh;
 }
 
 .about-text {
@@ -157,7 +157,7 @@ section,
 }
 
 .about-text p {
-  font-size: 16px;     
+  font-size: 16px;
 }
 
 .about-text a {
@@ -196,7 +196,7 @@ section,
   justify-content: center;
   flex-wrap: wrap;
   gap: 15px;
-  margin-bottom: 20px; /* zmenšená mezera od hlavičky */
+  margin-bottom: 40px;
 }
 
 .filter-btn {
@@ -371,14 +371,13 @@ footer p {
     grid-template-columns: 1fr;
   }
 
-  /* === BURGER MENU POD SEBE === */
   .burger {
     display: block;
   }
 
   .nav-wrapper {
     display: none;
-    flex-direction: column;
+    flex-direction: column; /* menu pod sebe */
     position: absolute;
     top: 70px;
     right: 20px;
@@ -395,14 +394,13 @@ footer p {
   }
 
   nav {
-    flex-direction: column;
+    flex-direction: column; /* položky pod sebou */
     gap: 15px;
   }
 
-  /* Zmenšená mezera mezi hlavičkou a filtry portfolia */
   .gallery-filter {
-    margin-top: 10px;
-    margin-bottom: 20px;
+    margin-top: -60px; /* menší mezera od hlavičky */
+    margin-bottom: 40px;
   }
 
   .filter-btn {
@@ -418,7 +416,7 @@ footer p {
 @media (max-width: 480px) {
   .image-container {
     max-height: 90vh;
-    margin-top: 10px;
+    margin-top: 30px; /* fotka posunuta níž */
     margin-bottom: 20px;
   }
 
@@ -439,8 +437,11 @@ footer p {
     gap: 15px;
   }
 
+  /* Filtry galerie – ještě menší mezera od hlavičky */
   .gallery-filter {
     gap: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
   }
 
   .filter-btn {
