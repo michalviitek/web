@@ -51,6 +51,7 @@ header {
     color: inherit;
     font-weight: 400; /* navigace a název nejsou tučné */
     font-size: 1.5rem;
+    font-family: 'EB Garamond', serif;
 }
 
 /* Menu */
@@ -62,6 +63,7 @@ nav {
     display: flex;
     list-style: none;
     gap: 2rem;
+    font-family: 'EB Garamond', serif;
 }
 
 .menu li a {
@@ -69,6 +71,7 @@ nav {
     color: inherit;
     font-weight: 400; /* navigace a název nejsou tučné */
     transition: color 0.3s;
+    font-family: 'EB Garamond', serif;
 }
 
 .menu li a:hover,
@@ -109,7 +112,7 @@ main {
 }
 
 .hero h1, .portfolio h1, .texts h1, .about-me h1 {
-    font-size: 2.5rem;
+    font-size: 1.5rem; /* menší nadpisy */
     margin-bottom: 1rem;
 }
 
@@ -120,7 +123,7 @@ main {
 
 /* Obrázek pro index */
 .hero-image {
-    width: 40%; /* desktop */
+    width: 35%; /* desktop */
     height: auto;
 }
 
@@ -133,6 +136,73 @@ footer {
     font-size: 0.9rem;
     color: inherit;
     background-color: inherit;
+    margin-top: auto; /* footer na konci stránky */
+    font-family: 'EB Garamond', serif;
+}
+
+/* ============================
+   Portfolio
+============================ */
+.portfolio-filters {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    font-family: 'EB Garamond', serif;
+}
+
+.portfolio-filters button {
+    background: none;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-family: 'EB Garamond', serif;
+    font-size: 1rem;
+    cursor: pointer;
+    color: inherit;
+    transition: color 0.3s;
+    text-transform: none; /* aby nebyly kapitálky */
+}
+
+.portfolio-filters button:hover,
+.portfolio-filters button.active {
+    color: #fddc5c;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    aspect-ratio: 1/1; /* čtvercové náhledy */
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05);
+}
+
+.photo-name {
+    position: absolute;
+    bottom: 0.5rem;
+    right: 0.5rem; /* přesun z levého do pravého spodního rohu */
+    color: #fddc5c;
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+    font-family: 'EB Garamond', serif;
 }
 
 /* ============================
@@ -151,6 +221,7 @@ footer {
         padding: 1rem;
         gap: 1rem;
         box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        font-family: 'EB Garamond', serif;
     }
 
     @media (prefers-color-scheme: dark) {
@@ -172,4 +243,15 @@ footer {
     .hero-image {
         width: 90%;
     }
+
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
+
+@media (min-width: 1200px) {
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
