@@ -89,7 +89,7 @@ nav a.active {
 
 .nav-wrapper.open {
   display: flex !important;
-  flex-direction: column;
+  flex-direction: column; /* pod sebou */
   position: absolute;
   top: 80px;
   right: 20px;
@@ -115,7 +115,7 @@ section,
 
 /* === ÚVODNÍ FOTKA (index) === */
 .image-container {
-  width: 600px;       /* původní velikost na počítači */
+  width: 600px;
   height: 550px;
   overflow: hidden;
   display: flex;
@@ -127,7 +127,8 @@ section,
 .image-container img {
   width: 100%;
   height: auto;
-  object-fit: cover;  /* NE ořezávání */
+  object-fit: cover;
+  border-radius: 0;
 }
 
 /* === O MNĚ === */
@@ -216,6 +217,7 @@ section,
   cursor: pointer;
   font-family: 'EB Garamond', serif;
   transition: color 0.3s;
+  color: inherit; /* fix modré na mobilech */
 }
 
 .filter-btn.active,
@@ -357,7 +359,7 @@ footer p {
   .image-container {
     width: 100%;
     height: auto;
-    margin-top: 20px; /* posun níž */
+    margin-top: 40px; /* posun níž */
   }
 
   .image-container img {
@@ -368,7 +370,7 @@ footer p {
   section,
   .about-wrapper,
   .gallery-section {
-    padding: 0 20px;
+    padding: 0 20px; /* sjednoceno se šířkou portfolia */
   }
 
   .gallery-grid {
@@ -385,11 +387,16 @@ footer p {
 
   .nav-wrapper.open {
     background-color: #fff;
+    flex-direction: column; /* položky pod sebou */
   }
 
   .gallery-filter {
-    margin-top: -80px;
+    margin-top: -80px; /* výběr blíž k hlavičce */
     margin-bottom: 40px;
+  }
+
+  .filter-btn {
+    color: inherit; /* černé na mobilech */
   }
 
   .lightbox-content-wrapper {
