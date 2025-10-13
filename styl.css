@@ -50,7 +50,7 @@ header {
   text-decoration: none;
   color: inherit;
   font-weight: 400;
-  white-space: nowrap; /* zabrání zalomení např. "O mně" */
+  white-space: nowrap;
 }
 
 .nav-wrapper {
@@ -70,7 +70,6 @@ nav a {
   color: inherit;
   font-size: 18px;
   transition: color 0.3s;
-  white-space: nowrap; /* zamezí zalomení textu */
 }
 
 nav a:hover,
@@ -90,29 +89,16 @@ nav a.active {
 
 .nav-wrapper.open {
   display: flex !important;
-  flex-direction: column;        /* svislé rozložení */
-  align-items: flex-start;
+  flex-direction: column;
   position: absolute;
-  top: 70px;
+  top: 80px;
   right: 20px;
   background-color: #fff;
   padding: 20px;
-  gap: 15px;
+  gap: 20px;
   box-shadow: 0 8px 20px rgba(0,0,0,0.2);
   border-radius: 8px;
   z-index: 1001;
-}
-
-.nav-wrapper.open nav {
-  flex-direction: column; /* odkazy pod sebe */
-  align-items: flex-start;
-  width: 100%;
-}
-
-.nav-wrapper.open a {
-  display: block;
-  width: 100%;
-  text-align: left;
 }
 
 /* === OBSAH === */
@@ -127,9 +113,9 @@ section,
   box-sizing: border-box;
 }
 
-/* === ÚVODNÍ FOTKA === */
+/* === ÚVODNÍ FOTKA (index) === */
 .image-container {
-  width: 600px;
+  width: 600px;       /* původní velikost na počítači */
   height: 550px;
   overflow: hidden;
   display: flex;
@@ -141,7 +127,7 @@ section,
 .image-container img {
   width: 100%;
   height: auto;
-  object-fit: cover;
+  object-fit: cover;  /* NE ořezávání */
 }
 
 /* === O MNĚ === */
@@ -172,7 +158,7 @@ section,
   width: 100%;
   height: 100%;
   object-fit: cover;
-  /* bez zaoblení */
+  border-radius: 0;
 }
 
 .about-text {
@@ -230,8 +216,6 @@ section,
   cursor: pointer;
   font-family: 'EB Garamond', serif;
   transition: color 0.3s;
-  color: inherit;
-  white-space: nowrap;
 }
 
 .filter-btn.active,
@@ -259,6 +243,7 @@ section,
   height: 100%;
   object-fit: cover;
   transition: transform 0.3s ease, filter 0.3s ease;
+  border-radius: 0;
 }
 
 .gallery-item:hover img {
@@ -342,15 +327,21 @@ footer p {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  header {
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 10px;
+  }
+
   .about-wrapper {
     flex-direction: column;
     align-items: center;
     gap: 40px;
-    padding: 0 20px;
+    padding: 0 20px; /* sjednoceno s portfoliem */
   }
 
-  .about-photo {
-    justify-content: center;
+  .about-photo img {
+    max-height: 400px;
   }
 
   .about-text {
@@ -363,8 +354,25 @@ footer p {
 }
 
 @media (max-width: 768px) {
-  header {
-    padding: 20px;
+  .image-container {
+    width: 100%;
+    height: auto;
+    margin-top: 20px; /* posun níž */
+  }
+
+  .image-container img {
+    object-fit: contain; /* větší a NE ořezaná */
+  }
+
+  main,
+  section,
+  .about-wrapper,
+  .gallery-section {
+    padding: 0 20px;
+  }
+
+  .gallery-grid {
+    grid-template-columns: 1fr;
   }
 
   .burger {
@@ -375,29 +383,18 @@ footer p {
     display: none;
   }
 
-  .image-container {
-    width: 100%;
-    height: auto;
-    margin-bottom: 40px;
+  .nav-wrapper.open {
+    background-color: #fff;
   }
 
-  .gallery-grid {
-    grid-template-columns: 1fr;
-  }
-
-  main, section {
-    padding: 0 20px;
+  .gallery-filter {
+    margin-top: -20px;
+    margin-bottom: 30px;
   }
 
   .lightbox-content-wrapper {
     max-width: 85%;
     max-height: 45vh;
-  }
-
-  /* Snížená mezera nad filtry na mobilech */
-  .gallery-filter {
-    margin-top: -60px; /* místo 60px */
-    margin-bottom: 40px;
   }
 }
 
