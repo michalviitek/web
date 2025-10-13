@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="cs">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Moje portfolio a webové stránky">
-    <meta name="keywords" content="portfolio, web, texty, o mně">
-    <title>Portfolio | Michal Vítek</title>
-    <link rel="icon" type="image/png" href="ikony/favicon.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Moje portfolio a webové stránky">
+  <meta name="keywords" content="portfolio, web, texty, o mně">
+  <title>Portfolio | Michal Vítek</title>
+  <link rel="icon" type="image/png" href="ikony/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <!-- Header -->
@@ -88,14 +88,22 @@
           <button class="read-more"> číst celé &gt;</button>
         `;
 
-        // Po kliknutí na "Číst celé"
+        // Po kliknutí na "Číst celé" — zobrazí se jen daný text
         textEl.querySelector('.read-more').addEventListener('click', () => {
-          textEl.innerHTML = `
-            <h2>${item.nazev}</h2>
-            <p>${item.text.replace(/\n/g, '<br>')}</p>
-            <button class="back">&lt; zpět</button>
+          textContainer.innerHTML = `
+            <div class="text-item">
+              <h2>${item.nazev}</h2>
+              <p>${item.text.replace(/\n/g, '<br>')}</p>
+              <button class="back">&lt; zpět</button>
+            </div>
           `;
-          textEl.querySelector('.back').addEventListener('click', () => loadTexts(category));
+
+          // Tlačítko "Zpět" — znovu načte texty a vrátí stránku nahoru
+          const backButton = document.querySelector('.back');
+          backButton.addEventListener('click', () => {
+            loadTexts(category);
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+          });
         });
 
         textContainer.appendChild(textEl);
@@ -109,6 +117,7 @@
         btn.classList.add('active');
         currentCategory = btn.dataset.filter;
         loadTexts(currentCategory);
+        window.scrollTo({ top: 0, behavior: 'smooth' });
       });
     });
 
