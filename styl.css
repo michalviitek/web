@@ -130,7 +130,7 @@ section,
   display: flex;
   align-items: stretch;
   justify-content: center;
-  gap: 100px;
+  gap: 60px; /* menší mezera mezi fotkou a textem */
   width: 100%;
   max-width: 1200px;
 }
@@ -143,9 +143,9 @@ section,
 
 .about-photo img {
   width: 100%;
-  height: auto;        /* zachová proporce */
-  object-fit: contain; /* nikdy se neořezává */
-  max-height: 80vh;    /* velká, ale ne přes celou výšku */
+  height: auto;
+  object-fit: contain;
+  max-height: 80vh;
 }
 
 .about-text {
@@ -157,7 +157,7 @@ section,
 }
 
 .about-text p {
-  font-size: 16px;     /* menší text pro lepší čitelnost */
+  font-size: 17px; /* mírně větší text pro mobilní displeje */
 }
 
 .about-text a {
@@ -328,7 +328,7 @@ footer p {
   .about-wrapper {
     flex-direction: column;
     align-items: center;
-    gap: 40px;
+    gap: 30px; /* menší mezera */
     padding: 0 20px;
   }
 
@@ -346,11 +346,12 @@ footer p {
 }
 
 @media (max-width: 768px) {
+  /* Úvodní fotka na index */
   .image-container {
     width: 100%;
     max-width: none;
     height: auto;
-    margin-top: 20px;
+    margin-top: 60px; /* posunutá níž */
     margin-bottom: 30px;
   }
 
@@ -364,11 +365,22 @@ footer p {
   section,
   .about-wrapper,
   .gallery-section {
-    padding: 0 20px;
+    padding: 0 15px;
   }
 
-  .gallery-grid {
-    grid-template-columns: 1fr;
+  .about-photo img {
+    max-height: 50vh; /* větší než předtím */
+  }
+
+  .about-text p {
+    font-size: 16px;
+  }
+
+  /* Filtry galerie na 2 řádky */
+  .gallery-filter {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
   }
 
   .burger {
@@ -377,9 +389,13 @@ footer p {
 
   .nav-wrapper {
     display: none;
-    flex-direction: column;
+  }
+
+  .nav-wrapper.open {
+    display: flex !important;
+    flex-direction: column; /* položky pod sebou */
     position: absolute;
-    top: 70px;
+    top: 80px;
     right: 20px;
     background-color: #fff;
     padding: 20px;
@@ -389,61 +405,9 @@ footer p {
     z-index: 1001;
   }
 
-  .nav-wrapper.open {
-    display: flex;
-  }
-
-  nav {
-    flex-direction: column;
-    gap: 15px;
-  }
-
-  .gallery-filter {
-    margin-top: -80px;
-    margin-bottom: 40px;
-  }
-
-  .filter-btn {
-    color: inherit;
-  }
-
   .lightbox-content-wrapper {
     max-width: 85%;
     max-height: 45vh;
-  }
-}
-
-@media (max-width: 480px) {
-  .image-container {
-    max-height: 90vh;
-    margin-top: 10px;
-    margin-bottom: 20px;
-  }
-
-  .about-text p {
-    font-size: 14px;
-  }
-
-  .about-photo img {
-    max-height: 45vh;
-  }
-
-  .burger {
-    font-size: 24px;
-  }
-
-  .nav-wrapper {
-    padding: 15px;
-    gap: 15px;
-  }
-
-  .gallery-filter {
-    gap: 10px;
-  }
-
-  .filter-btn {
-    padding: 6px 12px;
-    font-size: 14px;
   }
 }
 
