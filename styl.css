@@ -342,13 +342,17 @@ footer p {
 }
 
 @media (max-width: 768px) {
+  /* === ÚVODNÍ FOTKA NA MOBIL === */
   .image-container {
     width: 100%;
+    max-width: none;
     height: auto;
-    margin-top: 40px;
+    margin-top: 20px;
   }
 
   .image-container img {
+    width: 100%;
+    height: auto;
     object-fit: contain;
   }
 
