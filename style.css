@@ -8,7 +8,7 @@
 }
 
 html, body {
-    height: 100%; /* nutné pro flex layout */
+    height: 100%;
 }
 
 body {
@@ -38,7 +38,8 @@ header {
     width: 100%;
     background-color: inherit;
     padding: 1rem 2rem;
-    z-index: 100; /* aby hlavička byla nad obsahem */
+    z-index: 100;
+    position: relative;
 }
 
 .container {
@@ -99,10 +100,11 @@ nav {
    Sekce stránky
 ============================ */
 main {
-    flex: 1; /* hlavní obsah zabírá volný prostor pro footer */
+    flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 .hero, .about, .portfolio, .texts, .about-me {
@@ -147,7 +149,7 @@ footer {
 .portfolio-filters {
     display: flex;
     justify-content: center;
-    flex-wrap: nowrap; /* zabránit zalamování */
+    flex-wrap: nowrap;
     gap: 1rem;
     margin-bottom: 2rem;
     font-family: 'EB Garamond', serif;
@@ -163,7 +165,7 @@ footer {
     cursor: pointer;
     color: inherit;
     transition: color 0.3s;
-    white-space: nowrap; /* zabránit zalomení textu */
+    white-space: nowrap;
 }
 
 .portfolio-filters button:hover,
@@ -221,28 +223,28 @@ footer {
     justify-content: center;
     align-items: center;
     z-index: 1000;
-    flex-direction: column;
 }
 
 .lightbox-inner {
-    position: relative;
+    position: relative; /* pro caption */
     display: inline-block;
 }
 
 .lightbox-img {
-    max-width: 90%;
-    max-height: 80%;
+    display: block;
+    max-width: 90vw;
+    max-height: 80vh;
 }
 
 .lightbox-caption {
     position: absolute;
-    bottom: 0.5rem;
-    right: 0.5rem;
+    bottom: -1.5rem; /* pod fotkou */
+    right: 0;
     color: #fddc5c;
     font-size: 1rem;
-    text-align: right;
     font-family: 'EB Garamond', serif;
     text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+    white-space: nowrap;
 }
 
 .lightbox-close {
@@ -258,6 +260,7 @@ footer {
    Responzivita
 ============================ */
 @media (max-width: 768px) {
+
     .menu {
         position: absolute;
         top: 100%;
@@ -271,7 +274,7 @@ footer {
         gap: 1rem;
         box-shadow: 0 4px 10px rgba(0,0,0,0.1);
         font-family: 'EB Garamond', serif;
-        z-index: 200; /* menu nad obsahem */
+        z-index: 2000; /* aby menu bylo nad obrázky */
     }
 
     @media (prefers-color-scheme: dark) {
@@ -297,19 +300,17 @@ footer {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    /* Zmenšování písma filtrovníku a posunutí nahoru */
+    /* Zmenšování písma filtrovníku místo zalamování */
     .portfolio-filters {
         font-size: 0.9rem;
         gap: 0.5rem;
-        margin-top: 0.5rem; /* menší mezera od hlavičky */
-        margin-bottom: 1.5rem;
     }
 
     .portfolio-filters button {
         padding: 0.4rem 0.8rem;
     }
 
-    /* Zvýšení loga na telefonech */
+    /* Zvětšení loga na mobilech */
     .logo a {
         font-size: 1.8rem;
     }
