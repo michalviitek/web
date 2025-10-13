@@ -130,7 +130,7 @@ section,
   display: flex;
   align-items: stretch;
   justify-content: center;
-  gap: 40px; /* zmenšená mezera mezi fotkou a textem */
+  gap: 100px;
   width: 100%;
   max-width: 1200px;
 }
@@ -143,9 +143,9 @@ section,
 
 .about-photo img {
   width: 100%;
-  height: auto;
-  object-fit: contain;
-  max-height: 80vh;
+  height: auto;        
+  object-fit: contain; 
+  max-height: 80vh;    
 }
 
 .about-text {
@@ -157,7 +157,7 @@ section,
 }
 
 .about-text p {
-  font-size: 17px;
+  font-size: 16px;     
 }
 
 .about-text a {
@@ -188,15 +188,15 @@ section,
 
 /* === GALERIE === */
 .gallery-section {
-  margin-top: 40px; /* zmenšena mezera mezi hlavičkou a filtry */
+  margin-top: 60px;
 }
 
 .gallery-filter {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 10px;
-  margin-bottom: 40px;
+  gap: 15px;
+  margin-bottom: 20px; /* zmenšená mezera od hlavičky */
 }
 
 .filter-btn {
@@ -308,36 +308,50 @@ footer {
   border: none;
 }
 
+footer p {
+  margin: 0;
+  line-height: 1.6;
+}
+
 /* === RESPONSIVE === */
-@media (max-width: 768px) {
-
-  /* Burger menu pod sebe */
-  .burger {
-    display: block;
+@media (max-width: 900px) {
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 
-  .nav-wrapper {
-    display: none;
+  header {
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 10px;
   }
 
-  .nav-wrapper.open {
-    display: flex !important;
+  .about-wrapper {
     flex-direction: column;
-    position: absolute;
-    top: 70px;
-    right: 20px;
-    background-color: #fff;
-    padding: 15px;
-    gap: 15px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
-    border-radius: 8px;
-    z-index: 1001;
+    align-items: center;
+    gap: 40px;
+    padding: 0 20px;
   }
 
-  /* Index fotka */
+  .about-photo img {
+    max-height: 400px;
+  }
+
+  .about-text {
+    text-align: center;
+  }
+
+  .about-social {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
   .image-container {
     width: 100%;
-    margin-top: 60px;
+    max-width: none;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 30px;
   }
 
   .image-container img {
@@ -346,47 +360,92 @@ footer {
     object-fit: contain;
   }
 
-  /* O mně fotka a text */
-  .about-wrapper {
-    flex-direction: column;
-    align-items: center;
-    gap: 20px; /* menší mezera */
-    padding: 0 15px;
+  main,
+  section,
+  .about-wrapper,
+  .gallery-section {
+    padding: 0 20px;
   }
 
-  .about-photo img {
-    max-height: 50vh;
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* === BURGER MENU POD SEBE === */
+  .burger {
+    display: block;
+  }
+
+  .nav-wrapper {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    background-color: #fff;
+    padding: 20px;
+    gap: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    border-radius: 8px;
+    z-index: 1001;
+  }
+
+  .nav-wrapper.open {
+    display: flex;
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  /* Zmenšená mezera mezi hlavičkou a filtry portfolia */
+  .gallery-filter {
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  .filter-btn {
+    color: inherit;
+  }
+
+  .lightbox-content-wrapper {
+    max-width: 85%;
+    max-height: 45vh;
+  }
+}
+
+@media (max-width: 480px) {
+  .image-container {
+    max-height: 90vh;
+    margin-top: 10px;
+    margin-bottom: 20px;
   }
 
   .about-text p {
-    font-size: 17px;
-    text-align: center;
+    font-size: 14px;
   }
 
-  .about-social {
-    justify-content: center;
+  .about-photo img {
+    max-height: 45vh;
   }
 
-  /* Galerie filtry – 2 řádky, 3 nahoře, 2 dole */
+  .burger {
+    font-size: 24px;
+  }
+
+  .nav-wrapper {
+    padding: 15px;
+    gap: 15px;
+  }
+
   .gallery-filter {
-    justify-content: center;
-    flex-wrap: wrap;
     gap: 10px;
-    margin-top: 0;
-    margin-bottom: 30px;
   }
 
-  .filter-btn:nth-child(1),
-  .filter-btn:nth-child(2),
-  .filter-btn:nth-child(3) {
-    flex-basis: 33%;
-    text-align: center;
-  }
-
-  .filter-btn:nth-child(4),
-  .filter-btn:nth-child(5) {
-    flex-basis: 50%;
-    text-align: center;
+  .filter-btn {
+    padding: 6px 12px;
+    font-size: 14px;
   }
 }
 
