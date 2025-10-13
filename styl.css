@@ -30,11 +30,6 @@ h1, h2, h3, p {
   color: inherit;
 }
 
-h1 { font-size: 24px; margin-bottom: 20px; }
-h2 { font-size: 22px; margin-bottom: 18px; }
-h3 { font-size: 18px; margin-bottom: 14px; }
-p   { font-size: 18px; line-height: 1.7; }
-
 /* === HLAVIČKA === */
 header {
   width: 100%;
@@ -50,7 +45,6 @@ header {
   text-decoration: none;
   color: inherit;
   font-weight: 400;
-  white-space: nowrap;
 }
 
 .nav-wrapper {
@@ -87,130 +81,49 @@ nav a.active {
   color: inherit;
 }
 
-/* === OBSAH === */
+.nav-wrapper.open {
+  display: flex !important;
+  flex-direction: column;
+  position: absolute;
+  top: 80px;
+  right: 20px;
+  background-color: #fff;
+  padding: 20px;
+  gap: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  border-radius: 8px;
+  z-index: 1001;
+}
+
+/* === OBSAH A GALERIE === */
 main,
-section,
-.gallery,
-.image-container,
-.about-section {
+section {
   max-width: 1300px;
   margin: 0 auto;
   padding: 0 40px;
   box-sizing: border-box;
 }
 
-/* === ÚVODNÍ FOTKA (index) === */
-.image-container {
-  width: 600px;
-  height: 550px;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto 80px;
-}
-
-.image-container img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  border-radius: 0;
-}
-
-/* === O MNĚ === */
-.about-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 70vh;
-  margin-bottom: 80px;
-}
-
-.about-wrapper {
-  display: flex;
-  align-items: stretch;
-  justify-content: center;
-  gap: 100px;
-  width: 100%;
-  max-width: 1200px;
-}
-
-.about-photo {
-  flex: 0 0 380px;
-  display: flex;
-  justify-content: flex-end;
-}
-
-.about-photo img {
-  width: 100%;
-  height: auto;
-  object-fit: contain;
-  max-height: 80vh;
-}
-
-.about-text {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  line-height: 1.6;
-}
-
-.about-text p {
-  font-size: 16px;
-}
-
-.about-text a {
-  color: #fddc5c;
-  text-decoration: none;
-  transition: color 0.3s;
-}
-
-.about-text a:hover {
-  color: #dcb700;
-}
-
-.about-social {
-  margin-top: 30px;
-  display: flex;
-  gap: 20px;
-}
-
-.about-social img {
-  width: 22px;
-  height: 22px;
-  transition: opacity 0.3s;
-}
-
-.about-social img:hover {
-  opacity: 0.6;
-}
-
-/* === GALERIE === */
 .gallery-section {
-  margin-top: 40px; /* menší mezera od hlavičky */
+  margin-top: 60px;
 }
 
 .gallery-filter {
   display: flex;
   justify-content: center;
-  flex-wrap: nowrap; /* vždy v jedné řadě */
-  gap: 10px; /* menší mezery mezi filtry */
-  overflow-x: auto;
-  margin-bottom: 30px;
-  padding-bottom: 5px;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 40px;
 }
 
 .filter-btn {
   background: none;
   border: none;
-  padding: 8px 14px;
-  font-size: 17px; /* zvětšený text filtrů */
+  padding: 8px 16px;
+  font-size: 16px;
   cursor: pointer;
   font-family: 'EB Garamond', serif;
   transition: color 0.3s;
-  color: inherit;
-  white-space: nowrap;
 }
 
 .filter-btn.active,
@@ -218,7 +131,6 @@ section,
   color: #fddc5c;
 }
 
-/* === GRID GALERIE === */
 .gallery-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -239,7 +151,6 @@ section,
   height: 100%;
   object-fit: cover;
   transition: transform 0.3s ease, filter 0.3s ease;
-  border-radius: 0;
 }
 
 .gallery-item:hover img {
@@ -247,12 +158,23 @@ section,
   filter: brightness(70%);
 }
 
+.photo-name {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  color: #fddc5c;
+  font-size: 14px;
+  font-weight: bold;
+  text-shadow: 0 0 3px rgba(0,0,0,0.6);
+  pointer-events: none;
+}
+
 /* === LIGHTBOX === */
 .lightbox {
   display: none;
   position: fixed;
   inset: 0;
-  background: rgba(0,0,0,0.8);
+  background: rgba(0,0,0,0.7);
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -279,7 +201,17 @@ section,
   width: auto;
   height: auto;
   object-fit: contain;
+  border-radius: 0;
   display: block;
+}
+
+.lightbox-photo-name {
+  color: #fddc5c;
+  position: absolute;
+  bottom: -30px;
+  right: 0;
+  font-family: 'EB Garamond', serif;
+  font-size: 16px;
 }
 
 /* === PATIČKA === */
@@ -289,96 +221,6 @@ footer {
   padding: 40px 0 30px;
   color: #555;
   margin-top: auto;
-  border: none;
-}
-
-footer p {
-  margin: 0;
-  line-height: 1.6;
-}
-
-/* === RESPONSIVE === */
-@media (max-width: 900px) {
-  .gallery-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  header {
-    flex-wrap: wrap;
-    padding: 20px;
-    gap: 10px;
-  }
-
-  .about-wrapper {
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
-    padding: 0 20px;
-  }
-
-  .about-photo img {
-    max-height: 400px;
-  }
-
-  .about-text {
-    text-align: center;
-  }
-
-  .about-social {
-    justify-content: center;
-  }
-}
-
-@media (max-width: 768px) {
-  .burger {
-    display: block;
-  }
-
-  .nav-wrapper {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 70px;
-    right: 20px;
-    background-color: #fff;
-    padding: 20px;
-    gap: 15px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
-    border-radius: 8px;
-    z-index: 1001;
-  }
-
-  .nav-wrapper.open {
-    display: flex;
-  }
-
-  nav {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .gallery-filter {
-    margin-top: 5px;
-    margin-bottom: 15px;
-    gap: 8px;
-  }
-
-  .filter-btn {
-    font-size: 15px;
-    padding: 6px 10px;
-  }
-}
-
-@media (max-width: 480px) {
-  .filter-btn {
-    font-size: 14px;
-    padding: 4px 8px;
-  }
-
-  .gallery-filter {
-    margin-top: 0;
-    margin-bottom: 10px;
-  }
 }
 
 /* === DARK MODE === */
@@ -398,8 +240,13 @@ footer p {
     color: #fddc5c;
   }
 
-  footer {
+  .burger {
     color: #f1f1f1;
+  }
+
+  .nav-wrapper,
+  .nav-wrapper.open {
+    background-color: #1e1e1e;
   }
 
   .filter-btn {
@@ -411,33 +258,8 @@ footer p {
     color: #fddc5c;
   }
 
-  .burger {
+  footer {
     color: #f1f1f1;
-  }
-
-  .nav-wrapper {
-    background-color: #1e1e1e;
-  }
-
-  .nav-wrapper.open {
-    background-color: #1e1e1e;
-  }
-
-  .about-social img {
-    filter: invert(1);
-  }
-}
-
-/* === LOGO RESPONSIVITA === */
-@media (max-width: 768px) {
-  .logo a {
-    font-size: 24px;
-  }
-}
-
-@media (max-width: 480px) {
-  .logo a {
-    font-size: 22px;
   }
 }
 
