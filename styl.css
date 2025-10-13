@@ -5,14 +5,17 @@
   box-sizing: border-box;
 }
 
-html {
+html,
+body {
   font-size: clamp(16px, 2vw, 18px);
   height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 body {
-  margin: 0;
-  padding: 0;
   font-family: 'EB Garamond', serif;
   font-size: 18px;
   color: #1e1e1e;
@@ -21,7 +24,6 @@ body {
   flex-direction: column;
   min-height: 100vh;
   transition: background-color 0.3s ease, color 0.3s ease;
-  overflow-x: hidden;
 }
 
 /* === TYPOGRAFIE === */
@@ -57,8 +59,10 @@ header {
   display: flex;
   align-items: center;
   gap: 40px;
+  max-width: 100%;
 }
 
+/* === NAVIGACE === */
 nav {
   display: flex;
   align-items: center;
@@ -100,6 +104,7 @@ section,
 /* === ÚVODNÍ FOTKA (index) === */
 .image-container {
   width: 600px;
+  max-width: 100%;
   height: 550px;
   overflow: hidden;
   display: flex;
@@ -147,6 +152,7 @@ section,
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 20px;
+  max-width: 100%;
 }
 
 .gallery-item {
@@ -236,15 +242,45 @@ footer {
 
 /* === TMAVÝ REŽIM === */
 @media (prefers-color-scheme: dark) {
-  body { background-color: #1e1e1e; color: #f1f1f1; }
-  nav a, .logo a { color: #f1f1f1; }
-  nav a.active, nav a:hover { color: #fddc5c; }
-  footer { color: #f1f1f1; }
-  .filter-btn { color: #f1f1f1; }
-  .filter-btn.active, .filter-btn:hover { color: #fddc5c; }
-  .burger { color: #f1f1f1; }
-  .nav-wrapper { background-color: #1e1e1e; }
-  .nav-wrapper.open { background-color: #1e1e1e; }
+  body {
+    background-color: #1e1e1e;
+    color: #f1f1f1;
+  }
+
+  nav a,
+  .logo a {
+    color: #f1f1f1;
+  }
+
+  nav a.active,
+  nav a:hover {
+    color: #fddc5c;
+  }
+
+  footer {
+    color: #f1f1f1;
+  }
+
+  .filter-btn {
+    color: #f1f1f1;
+  }
+
+  .filter-btn.active,
+  .filter-btn:hover {
+    color: #fddc5c;
+  }
+
+  .burger {
+    color: #f1f1f1;
+  }
+
+  .nav-wrapper {
+    background-color: #1e1e1e;
+  }
+
+  .nav-wrapper.open {
+    background-color: #1e1e1e;
+  }
 }
 
 /* === SKRYTÝ TEXT PRO SEO === */
@@ -260,33 +296,90 @@ footer {
   border: 0;
 }
 
-/* === RESPONZIVITA === */
-
-/* Tablety a menší desktop */
-@media (max-width: 1200px) {
-  header { padding: 25px 40px; }
-  .image-container { width: 80%; height: auto; margin-bottom: 60px; }
-  .gallery-grid { grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); }
+/* === RESPONSIVITA === */
+@media (max-width: 1024px) {
+  header {
+    padding: 20px 30px;
+  }
+  h1 { font-size: 22px; }
+  h2 { font-size: 20px; }
+  h3 { font-size: 16px; }
 }
 
-/* Malé tablety a velké mobily */
 @media (max-width: 768px) {
-  header { flex-direction: column; align-items: flex-start; gap: 20px; padding: 20px; }
-  .nav-wrapper { gap: 20px; flex-wrap: wrap; }
-  .burger { display: block; }
-  nav { display: none; flex-direction: column; width: 100%; gap: 15px; }
-  .nav-wrapper.open nav { display: flex; }
-  .image-container { width: 100%; height: auto; margin-bottom: 40px; }
-  .gallery-grid { grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 15px; }
-  main, section { padding: 0 20px; }
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15px 20px;
+  }
+
+  .burger {
+    display: block;
+  }
+
+  nav {
+    display: none;
+    flex-direction: column;
+    gap: 20px;
+    background-color: inherit;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 200px;
+    padding: 20px;
+  }
+
+  .nav-wrapper.open nav {
+    display: flex;
+  }
+
+  .image-container {
+    width: 100%;
+    height: auto;
+    margin-bottom: 40px;
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 15px;
+  }
+
+  .gallery-filter {
+    gap: 10px;
+    margin-bottom: 30px;
+  }
 }
 
-/* Malé mobily */
 @media (max-width: 480px) {
-  header { padding: 15px; }
-  .logo a { font-size: 24px; }
-  nav a { font-size: 16px; }
-  .burger { font-size: 24px; }
-  .gallery-grid { grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 10px; }
-  .filter-btn { padding: 6px 12px; font-size: 14px; }
+  header {
+    padding: 10px 15px;
+  }
+
+  .logo a {
+    font-size: 24px;
+  }
+
+  .burger {
+    font-size: 26px;
+  }
+
+  nav {
+    width: 180px;
+    padding: 15px;
+    gap: 15px;
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 10px;
+  }
+
+  .gallery-filter {
+    gap: 8px;
+    margin-bottom: 20px;
+  }
+
+  .image-container {
+    margin-bottom: 30px;
+  }
 }
