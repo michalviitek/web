@@ -143,9 +143,9 @@ section,
 
 .about-photo img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 0;
+  height: auto;        /* zachová proporce */
+  object-fit: contain; /* nikdy se neořezává */
+  max-height: 80vh;    /* velká, ale ne přes celou výšku */
 }
 
 .about-text {
@@ -153,7 +153,11 @@ section,
   display: flex;
   flex-direction: column;
   justify-content: center;
-  line-height: 1.7;
+  line-height: 1.6;
+}
+
+.about-text p {
+  font-size: 16px;     /* menší text pro lepší čitelnost */
 }
 
 .about-text a {
@@ -342,7 +346,6 @@ footer p {
 }
 
 @media (max-width: 768px) {
-  /* === ÚVODNÍ FOTKA NA MOBIL === */
   .image-container {
     width: 100%;
     max-width: none;
@@ -368,7 +371,6 @@ footer p {
     grid-template-columns: 1fr;
   }
 
-  /* === BURGER MENU RESPONSIVE === */
   .burger {
     display: block;
   }
@@ -411,7 +413,6 @@ footer p {
   }
 }
 
-/* === EXTRA MALÉ TELEFONY (≤480px) === */
 @media (max-width: 480px) {
   .image-container {
     max-height: 90vh;
@@ -420,7 +421,11 @@ footer p {
   }
 
   .about-text p {
-    font-size: 16px;
+    font-size: 14px;
+  }
+
+  .about-photo img {
+    max-height: 45vh;
   }
 
   .burger {
