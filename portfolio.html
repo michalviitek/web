@@ -8,66 +8,6 @@
   <link rel="icon" href="ikony/favicon.png" type="image/png">
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styl.css">
-  <style>
-    /* --- Názvy fotek přímo na obrázku --- */
-    .gallery-item {
-      position: relative;
-    }
-    .gallery-item .photo-name {
-      position: absolute;
-      bottom: 8px;
-      right: 8px;
-      font-family: 'EB Garamond', serif;
-      font-size: 14px;
-      color: #fddc5c;
-      pointer-events: none;
-    }
-
-    /* --- Lightbox a název pod fotkou --- */
-    .lightbox {
-      display: none;
-      position: fixed;
-      inset: 0;
-      background: rgba(0,0,0,0.7);
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      z-index: 999;
-      cursor: pointer;
-      padding: 20px;
-      box-sizing: border-box;
-    }
-
-    .lightbox.active {
-      display: flex;
-    }
-
-    .lightbox-content-wrapper {
-      position: relative;
-      display: inline-block;
-      max-width: 90%;
-      max-height: 90%;
-    }
-
-    .lightbox-content {
-      max-width: 100%;
-      max-height: 100%;
-      width: auto;
-      height: auto;
-      object-fit: contain;
-      border-radius: 0;
-      display: block;
-    }
-
-    .lightbox-photo-name {
-      color: #fddc5c;
-      font-family: 'EB Garamond', serif;
-      font-size: 16px;
-      position: absolute;
-      bottom: -24px;
-      right: 0;
-    }
-  </style>
 </head>
 <body>
 
@@ -78,6 +18,7 @@
     <nav>
       <a href="index.html">domů</a>
       <a href="portfolio.html" class="active">portfolio</a>
+      <a href="texty.html">texty</a>
       <a href="omne.html">o mně</a>
     </nav>
   </div>
