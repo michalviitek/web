@@ -367,8 +367,9 @@ footer p {
     padding: 0 20px;
   }
 
+  /* Galerie grid na mobilu – 2 sloupce */
   .gallery-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .burger {
@@ -377,7 +378,7 @@ footer p {
 
   .nav-wrapper {
     display: none;
-    flex-direction: column; /* menu pod sebe */
+    flex-direction: column;
     position: absolute;
     top: 70px;
     right: 20px;
@@ -394,34 +395,23 @@ footer p {
   }
 
   nav {
-    flex-direction: column; /* položky pod sebou */
+    flex-direction: column;
     gap: 15px;
   }
 
-  /* Galerie filtry menší mezera od hlavičky */
+  /* Filtry galerie – menší mezera od hlavičky */
   .gallery-filter {
+    gap: 10px;
     margin-top: 5px;
     margin-bottom: 15px;
-    gap: 10px;
     justify-content: center;
-    flex-wrap: wrap;
-  }
-
-  /* Rozložení filtrů na dva řádky na mobilu */
-  .gallery-filter button:nth-child(1),
-  .gallery-filter button:nth-child(2),
-  .gallery-filter button:nth-child(3) {
-    flex: 0 0 30%;
-  }
-
-  .gallery-filter button:nth-child(4),
-  .gallery-filter button:nth-child(5) {
-    flex: 0 0 30%;
   }
 
   .filter-btn {
     padding: 6px 12px;
     font-size: 14px;
+    flex: 1 1 40%;
+    text-align: center;
   }
 
   .lightbox-content-wrapper {
@@ -433,7 +423,7 @@ footer p {
 @media (max-width: 480px) {
   .image-container {
     max-height: 90vh;
-    margin-top: 30px; /* fotka posunuta níž */
+    margin-top: 30px;
     margin-bottom: 20px;
   }
 
