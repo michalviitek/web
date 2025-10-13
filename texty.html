@@ -22,7 +22,7 @@
           <li><a href="index.html">Domů</a></li>
           <li><a href="portfolio.html">Portfolio</a></li>
           <li><a href="texty.html" class="active">Texty</a></li>
-          <li><a href="omne.html">O mně</a></li>
+          <li><a href="o-mne.html">O mně</a></li>
         </ul>
         <div class="burger" id="burger">
           <div></div><div></div><div></div>
@@ -76,13 +76,16 @@
       }
 
       data.forEach(item => {
-        const excerpt = item.text.split('\n').slice(0, 6).join('<br>'); // ukázka
+        // kratší ukázka u prózy
+        const previewLength = category === 'proza' ? 2 : 4;
+        const excerpt = item.text.split('\n').slice(0, previewLength).join('<br>'); 
+
         const textEl = document.createElement('div');
         textEl.classList.add('text-item');
         textEl.innerHTML = `
           <h2>${item.nazev}</h2>
           <p>${excerpt}...</p>
-          <button class="read-more">Číst celé</button>
+          <button class="read-more"> číst celé &gt;</button>
         `;
 
         // Po kliknutí na "Číst celé"
@@ -90,7 +93,7 @@
           textEl.innerHTML = `
             <h2>${item.nazev}</h2>
             <p>${item.text.replace(/\n/g, '<br>')}</p>
-            <button class="back">Zpět</button>
+            <button class="back">&lt; zpět</button>
           `;
           textEl.querySelector('.back').addEventListener('click', () => loadTexts(category));
         });
