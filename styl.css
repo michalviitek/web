@@ -345,7 +345,7 @@ footer p {
   /* === ÚVODNÍ FOTKA NA MOBIL === */
   .image-container {
     width: 100%;
-    max-width: none;
+    max-width: 720px;
     height: auto;
     margin-top: 20px;
   }
