@@ -259,7 +259,7 @@ section,
   display: none;
   position: fixed;
   inset: 0;
-  background: rgba(0,0,0,0.7);
+  background: rgba(0,0,0,0.8);
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -398,13 +398,12 @@ footer p {
     gap: 15px;
   }
 
-  /* Filtry galerie – dva řádky, menší mezera od hlavičky */
   .gallery-filter {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 8px; /* menší mezera mezi filtry */
-    margin-top: 5px; /* menší mezera od hlavičky */
+    gap: 8px;
+    margin-top: 5px;
     margin-bottom: 15px;
   }
 
@@ -431,10 +430,24 @@ footer p {
 }
 
 @media (max-width: 480px) {
+  /* Úprava index fotky a patičky */
   .image-container {
-    max-height: 90vh;
-    margin-top: 30px;
-    margin-bottom: 20px;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 20px; /* menší mezera k patičce */
+  }
+
+  .image-container img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+
+  footer {
+    padding: 20px 0 20px; /* menší padding, patička viditelná */
+    font-size: 14px;
   }
 
   .about-text p {
