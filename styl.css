@@ -157,7 +157,7 @@ section,
 }
 
 .about-text p {
-  font-size: 16px;
+  font-size: 16px; /* stabilní velikost textu */
 }
 
 .about-text a {
@@ -194,7 +194,7 @@ section,
 .gallery-filter {
   display: flex;
   justify-content: center;
-  flex-wrap: nowrap; /* vždy v jednom řádku */
+  flex-wrap: wrap;
   gap: 15px;
   margin-bottom: 40px;
 }
@@ -328,7 +328,7 @@ footer p {
   .about-wrapper {
     flex-direction: column;
     align-items: center;
-    gap: 40px;
+    gap: 30px; /* zmenšená mezera mezi fotkou a textem */
     padding: 0 20px;
   }
 
@@ -398,16 +398,14 @@ footer p {
     gap: 15px;
   }
 
-  /* Filtry galerie – vždy jeden řádek, jen menší text a padding */
   .gallery-filter {
-    flex-wrap: nowrap;
-    gap: 10px;
     margin-top: 5px;
     margin-bottom: 15px;
+    gap: 10px;
   }
 
   .filter-btn {
-    padding: 5px 10px;
+    padding: 6px 12px;
     font-size: 14px;
   }
 
@@ -420,12 +418,16 @@ footer p {
 @media (max-width: 480px) {
   .image-container {
     max-height: 90vh;
-    margin-top: 20px;
+    margin-top: 30px;
     margin-bottom: 20px;
   }
 
   .about-text p {
-    font-size: 14px;
+    font-size: 14px; /* stabilní text, nepřehnaně měnící se */
+  }
+
+  .about-wrapper {
+    gap: 20px; /* ještě menší mezera mezi textem a fotkou */
   }
 
   .about-photo img {
