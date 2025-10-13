@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Portfolio Michala Vítka">
-    <meta name="keywords" content="portfolio, projekty, web">
+    <meta name="keywords" content="portfolio, fotografie, galerie">
     <title>Portfolio | Michal Vítek</title>
     <link rel="icon" type="image/png" href="ikony/favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,41 +13,122 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div class="logo"><a href="index.html">Michal Vítek</a></div>
-            <nav>
-                <ul class="menu">
-                    <li><a href="index.html">Domů</a></li>
-                    <li><a href="portfolio.html" class="active">Portfolio</a></li>
-                    <li><a href="texty.html">Texty</a></li>
-                    <li><a href="o-mne.html">O mně</a></li>
-                </ul>
-                <div class="burger">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div>
-            </nav>
+<header>
+    <div class="container">
+        <div class="logo"><a href="index.html">Michal Vítek</a></div>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Domů</a></li>
+                <li><a href="portfolio.html" class="active">Portfolio</a></li>
+                <li><a href="texty.html">Texty</a></li>
+                <li><a href="o-mne.html">O mně</a></li>
+            </ul>
+            <div class="burger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <section class="portfolio">
+        <div class="portfolio-filters">
+            <button class="active" data-filter="vše">vše</button>
+            <button data-filter="bw">bw</button>
+            <button data-filter="architektura">architektura</button>
+            <button data-filter="krajinky">krajinky</button>
+            <button data-filter="street">street</button>
         </div>
-    </header>
 
-    <main>
-        <section class="portfolio">
-            <h1>Portfolio</h1>
-            <p>Toto je testovací obsah portfolio stránky. Zde budou zobrazeny projekty a ukázky práce.</p>
-            <p>Další věta slouží k testování layoutu a textového stylu.</p>
-        </section>
-    </main>
+        <div class="gallery">
+            <!-- B&W -->
+            <div class="gallery-item" data-category="bw vše"><img src="obrazky/portfolio/0004.jpg" alt="Fotka kosmonauta v mlze" loading="lazy"><span class="photo-name">0004</span></div>
+            <div class="gallery-item" data-category="bw vše"><img src="obrazky/portfolio/0005.jpg" alt="Fotka drátů na fügnerce" loading="lazy"><span class="photo-name">0005</span></div>
+            <div class="gallery-item" data-category="bw vše"><img src="obrazky/portfolio/0006.jpg" alt="Fotka obyvatel autobusového terminálu" loading="lazy"><span class="photo-name">0006</span></div>
+            <div class="gallery-item" data-category="bw vše"><img src="obrazky/portfolio/0007.jpg" alt="Fotka cesty pod ještědem" loading="lazy"><span class="photo-name">0007</span></div>
 
-    <footer>
-        <p>© 2001 Michal Vítek</p>
-    </footer>
+            <!-- Krajinky -->
+            <div class="gallery-item" data-category="krajinky vše"><img src="obrazky/portfolio/0012.jpg" alt="Fotka jedné nebo dvou krav" loading="lazy"><span class="photo-name">0012</span></div>
+            <div class="gallery-item" data-category="krajinky vše"><img src="obrazky/portfolio/0013.jpg" alt="Fotka stáda v Alpách" loading="lazy"><span class="photo-name">0013</span></div>
+            <div class="gallery-item" data-category="krajinky vše"><img src="obrazky/portfolio/0014.jpg" alt="Fotografie alpského potoka" loading="lazy"><span class="photo-name">0014</span></div>
+            <div class="gallery-item" data-category="krajinky vše"><img src="obrazky/portfolio/0015.jpg" alt="Fotka alpské cesty" loading="lazy"><span class="photo-name">0015</span></div>
+            <div class="gallery-item" data-category="krajinky vše"><img src="obrazky/portfolio/0018.jpg" alt="Fotka blízko k cíli" loading="lazy"><span class="photo-name">0018</span></div>
+            <div class="gallery-item" data-category="krajinky vše"><img src="obrazky/portfolio/0019.jpg" alt="Fotografie blízko cíle" loading="lazy"><span class="photo-name">0019</span></div>
+            <div class="gallery-item" data-category="krajinky vše"><img src="obrazky/portfolio/0020.jpg" alt="Fotografie z útesu" loading="lazy"><span class="photo-name">0020</span></div>
+            <div class="gallery-item" data-category="krajinky vše"><img src="obrazky/portfolio/0024.jpg" alt="Fotografie moře" loading="lazy"><span class="photo-name">0024</span></div>
+            <div class="gallery-item" data-category="krajinky vše"><img src="obrazky/portfolio/0033.jpg" alt="Fotografie Lofot" loading="lazy"><span class="photo-name">0033</span></div>
+            <div class="gallery-item" data-category="krajinky vše"><img src="obrazky/portfolio/0034.jpg" alt="Fotka kopců na Lofotech" loading="lazy"><span class="photo-name">0034</span></div>
 
-    <script>
-        const burger = document.querySelector('.burger');
-        const menu = document.querySelector('.menu');
-        burger.addEventListener('click', () => { menu.classList.toggle('show'); });
-    </script>
+            <!-- Architektura -->
+            <div class="gallery-item" data-category="architektura vše"><img src="obrazky/portfolio/0001.jpg" alt="Fotka kostela" loading="lazy"><span class="photo-name">0001</span></div>
+            <div class="gallery-item" data-category="architektura vše"><img src="obrazky/portfolio/0009.jpg" alt="Fotka kapličky" loading="lazy"><span class="photo-name">0009</span></div>
+            <div class="gallery-item" data-category="architektura vše"><img src="obrazky/portfolio/0011.jpg" alt="Fotografie alpského kostelíku" loading="lazy"><span class="photo-name">0011</span></div>
+            <div class="gallery-item" data-category="architektura vše"><img src="obrazky/portfolio/0016.jpg" alt="Fotka staré horské chaty" loading="lazy"><span class="photo-name">0016</span></div>
+            <div class="gallery-item" data-category="architektura vše"><img src="obrazky/portfolio/0021.jpg" alt="Fotka loďky v Basileji" loading="lazy"><span class="photo-name">0021</span></div>
+            <div class="gallery-item" data-category="architektura vše"><img src="obrazky/portfolio/0022.jpg" alt="Fotografie řeky v Bernu" loading="lazy"><span class="photo-name">0022</span></div>
+            <div class="gallery-item" data-category="architektura vše"><img src="obrazky/portfolio/0025.jpg" alt="Fotografie Norských domků" loading="lazy"><span class="photo-name">0025</span></div>
+            <div class="gallery-item" data-category="architektura vše"><img src="obrazky/portfolio/0026.jpg" alt="Fotografie vesničky na Lofotech" loading="lazy"><span class="photo-name">0026</span></div>
+            <div class="gallery-item" data-category="architektura vše"><img src="obrazky/portfolio/0027.jpg" alt="Fotka rybářských domů" loading="lazy"><span class="photo-name">0027</span></div>
+            <div class="gallery-item" data-category="architektura vše"><img src="obrazky/portfolio/0028.jpg" alt="Fotka zlatého domku za zlaté hodinky" loading="lazy"><span class="photo-name">0028</span></div>
+            <div class="gallery-item" data-category="architektura vše"><img src="obrazky/portfolio/0029.jpg" alt="Fotka norského domku" loading="lazy"><span class="photo-name">0029</span></div>
+            <div class="gallery-item" data-category="architektura vše"><img src="obrazky/portfolio/0030.jpg" alt="Fotka zlaté uličky" loading="lazy"><span class="photo-name">0030</span></div>
+            <div class="gallery-item" data-category="architektura vše"><img src="obrazky/portfolio/0031.jpg" alt="Fotka přístavu" loading="lazy"><span class="photo-name">0031</span></div>
+            <div class="gallery-item" data-category="architektura vše"><img src="obrazky/portfolio/0041.jpg" alt="Fotka vídeňské ulice" loading="lazy"><span class="photo-name">0041</span></div>
+            <div class="gallery-item" data-category="architektura vše"><img src="obrazky/portfolio/0042.jpg" alt="Fotka vídeňské architektury" loading="lazy"><span class="photo-name">0042</span></div>
+
+            <!-- Street -->
+            <div class="gallery-item" data-category="street vše"><img src="obrazky/portfolio/0003.jpg" alt="Fotka rybáře" loading="lazy"><span class="photo-name">0003</span></div>
+            <div class="gallery-item" data-category="street vše"><img src="obrazky/portfolio/0008.jpg" alt="Fotka dívky v kavárně" loading="lazy"><span class="photo-name">0008</span></div>
+            <div class="gallery-item" data-category="street vše"><img src="obrazky/portfolio/0017.jpg" alt="Fotka páru v Budapešti" loading="lazy"><span class="photo-name">0017</span></div>
+            <div class="gallery-item" data-category="street vše"><img src="obrazky/portfolio/0023.jpg" alt="Fotka kola v Amsterdamu" loading="lazy"><span class="photo-name">0023</span></div>
+            <div class="gallery-item" data-category="street vše"><img src="obrazky/portfolio/0035.jpg" alt="Fotka odpoledního trhu" loading="lazy"><span class="photo-name">0035</span></div>
+            <div class="gallery-item" data-category="street vše"><img src="obrazky/portfolio/0036.jpg" alt="Fotka na zastávce" loading="lazy"><span class="photo-name">0036</span></div>
+            <div class="gallery-item" data-category="street vše"><img src="obrazky/portfolio/0037.jpg" alt="Fotka Prateru" loading="lazy"><span class="photo-name">0037</span></div>
+            <div class="gallery-item" data-category="street vše"><img src="obrazky/portfolio/0038.jpg" alt="Fotka horské dráhy" loading="lazy"><span class="photo-name">0038</span></div>
+            <div class="gallery-item" data-category="street vše"><img src="obrazky/portfolio/0039.jpg" alt="Fotografie lásky u horské dráhy" loading="lazy"><span class="photo-name">0039</span></div>
+            <div class="gallery-item" data-category="street vše"><img src="obrazky/portfolio/0043.jpg" alt="Fotka dívky na kole" loading="lazy"><span class="photo-name">0043</span></div>
+            <!-- Vše --> 
+            <div class="gallery-item" data-category="vše"><img src="obrazky/portfolio/0002.jpg" alt="Fotka rybáře" loading="lazy"><span class="photo-name">0003</span></div>
+            <div class="gallery-item" data-category="vše"><img src="obrazky/portfolio/0010.jpg" alt="Fotka rybáře" loading="lazy"><span class="photo-name">0003</span></div>
+            <div class="gallery-item" data-category="vše"><img src="obrazky/portfolio/0032.jpg" alt="Fotka rybáře" loading="lazy"><span class="photo-name">0003</span></div>
+            <div class="gallery-item" data-category="vše"><img src="obrazky/portfolio/0040.jpg" alt="Fotka rybáře" loading="lazy"><span class="photo-name">0003</span></div>
+        
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>© 2001 Michal Vítek</p>
+</footer>
+
+<script>
+    // Filtry portfolia
+    const filterButtons = document.querySelectorAll('.portfolio-filters button');
+    const galleryItems = document.querySelectorAll('.gallery-item');
+
+    filterButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+            document.querySelector('.portfolio-filters .active').classList.remove('active');
+            btn.classList.add('active');
+            const filter = btn.dataset.filter;
+            galleryItems.forEach(item => {
+                if (item.dataset.category.includes(filter)) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        });
+    });
+
+    // Burger menu
+    const burger = document.querySelector('.burger');
+    const menu = document.querySelector('.menu');
+    burger.addEventListener('click', () => {
+        menu.classList.toggle('show');
+    });
+</script>
 </body>
 </html>
