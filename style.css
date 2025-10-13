@@ -115,13 +115,14 @@ main {
 }
 
 .hero h1, .portfolio h1, .texts h1, .about-me h1 {
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     margin-bottom: 1rem;
 }
 
 .hero p, .about p, .portfolio p, .texts p, .about-me p {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     margin-bottom: 1rem;
+    line-height: 1.5;
 }
 
 /* Obrázek pro index */
