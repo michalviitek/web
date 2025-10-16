@@ -87,7 +87,10 @@
             <div class="gallery-item" data-category="street vše"><img src="obrazky/portfolio/0036.jpg" alt="Fotka na zastávce"><span class="photo-name">0036</span></div>
             <div class="gallery-item" data-category="street vše"><img src="obrazky/portfolio/0037.jpg" alt="Fotka Prateru"><span class="photo-name">0037</span></div>
             <div class="gallery-item" data-category="street vše"><img src="obrazky/portfolio/0038.jpg" alt="Fotka horské dráhy"><span class="photo-name">0038</span></div>
-            <div class="gallery-item" data-category="street vše"><img src="obrazky/portfolio/0039.jpg" alt="Fotografie lásky u horské dráhy"><span class="photo-name">0039</span></div>
+            <div class="gallery-item special-text" data-category="street vše">
+                <img src="obrazky/portfolio/0039.jpg" alt="Fotografie lásky u horské dráhy">
+                <span class="photo-name">0039</span>
+            </div>
             <div class="gallery-item" data-category="street vše"><img src="obrazky/portfolio/0043.jpg" alt="Fotka dívky na kole"><span class="photo-name">0043</span></div>
         
             <!-- Vše -->
@@ -144,12 +147,19 @@
     const lightboxClose = document.getElementById('lightbox-close');
 
     galleryItems.forEach(item => {
-        item.addEventListener('click', () => {
-            lightbox.style.display = 'flex';
-            lightboxImg.src = item.querySelector('img').src;
-            lightboxCaption.textContent = item.querySelector('.photo-name').textContent;
-        });
+    item.addEventListener('click', () => {
+        lightbox.style.display = 'flex';
+        lightboxImg.src = item.querySelector('img').src;
+        lightboxCaption.textContent = item.querySelector('.photo-name').textContent;
+
+        // Pokud má fotka třídu "special-text", přidáme styl i lightboxu
+        if (item.classList.contains('special-text')) {
+            lightbox.classList.add('special-text-active');
+        } else {
+            lightbox.classList.remove('special-text-active');
+        }
     });
+});
 
     lightboxClose.addEventListener('click', () => lightbox.style.display = 'none');
     lightbox.addEventListener('click', e => {
@@ -158,3 +168,4 @@
 </script>
 </body>
 </html>
+
