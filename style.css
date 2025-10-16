@@ -423,3 +423,13 @@ footer {
         font-size: 0.8rem;
     }
 }
+
+/* Speciální barva textu pro fotku 0039 */
+.gallery-item.special-text .photo-name {
+    color: #d3d3d3 !important;
+}
+/* Světle šedý popisek i v lightboxu */
+.lightbox.special-text-active .lightbox-caption {
+    color: #d3d3d3 !important;
+}
+
