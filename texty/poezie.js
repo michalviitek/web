@@ -3211,48 +3211,6 @@ hnědý
 kudrnatý vlasy.`
     },
     { 
-      nazev: 'když všechno jde, kdo tomu rozumí.', 
-      text: `je sobota
-je před druhou
-je poloprázdná ulice
-
-dva kluci na kole 
-projeli pěší zónou 
-před pochůzkářem 
-a jiná dvojice 
-se drží za ruce
-a jde 
-kam dvojice 
-držící se za ruce
-chodívají
-
-historická tramvaj projela nádražím
-které už teď kříží
-jenom zkroucená postava 
-co pamatuje onu tramvaj 
-v nejlepších časech
-
-psi bez vodítek
-se vysmívají psům na vodítkách
-a dva dívčí zadky na radaru 
-se kroutí
-při chůzi do bazaru
-s něčími syny 
-
-dlažba zarůstá mechem
-i když je sucho 
-a někdo v jeho stínu 
-kropí strom 
-a né vodou 
-
-všechno jde 
-když tu stojím
-u stánku
-a piju další kafe 
-
-kdo tomu rozumí...`
-    },
-    { 
       nazev: 'když dáte někomu šanci.', 
       text: `bylo mu sotva dvacet 
 a i když jeho kůže neměla zrovna evropskou barvu 
@@ -3549,7 +3507,6 @@ pouličních lamp
 aniž by někoho předem varovala 
 byla pryč
 
-
 dozvěděl jsem se to 
 naprostou náhodou 
 někdo se prořekl 
@@ -3607,51 +3564,6 @@ překlenout všechen ten prázdnej čas
 a teď tu sedím
 mám o jeden papír na hlavu víc
 a pořád nevím co se sebou. `
-    },
-    { 
-      nazev: 'nejhorší místo.', 
-      text: `abych uvolnil místo
-v uličce autobusu
-sednul jsem si na jedno z těch míst pro důchodce 
-kde proti sobě sedí čtyři 
-vypráví si o pořádcích dnešní doby 
-o dobách minulých
-a okopávají si kotníky 
-někdy schválně 
-a jindy z nepozornosti 
-když se snaží ukvapeně vystoupit 
-na konečné zastávce 
-která je v tu chvíli ještě dva kilometry daleko
-
-za všech okolností 
-je tohle to nejhorší místo
-ve všech dopravních prostředcích 
-pokud cestujete sami 
-a jelikož cestuju sám 
-kromě okopaných lítek 
-musím snášet i ty rozhovory
-
-pozoroval jsem 
-ty osmdesát
-nebo sedmdesát let staré 
-měsíční krajiny tváří
-a četl z nich 
-(zapomněl jsem si v garsonce knížku) 
-
-a přemýšlel jsem při tom nad tím 
-kolik věcí viděly jejich oči
-čím dál hlouběji se nořící do lebky
-v jisté formě útěku z reality
-
-kolik toho zažily jejich rty  
-kolikrát se jim čela zkřivila v bolestech 
-a kolik slz sjíždělo dolů k jedné z brad
-které jim vyčnívají nad krkem  
-kolikrát se asi dusil v objetí stehen 
-ten jeho rozpadající se obličej
-kolikrát ho měla v ústech 
-
-asi je čas vystoupit. `
     },
     { 
       nazev: 'ženská z protějšího baráku mi kouká do skříně.', 
@@ -4619,91 +4531,6 @@ si budu pamatovat
 ještě sakra dlouho.`
     },
     { 
-      nazev: 'čeho trochu lituji.', 
-      text: `jediné 
-čeho trochu lituji
-hodně lituji 
-jsou chvíle
-na které nemůžu vzpomínat
-
-všechny ty plány 
-od berlína přes banát
-po trek v jizerkách 
-oslavující úspěšnou maturitu
-to všechno
-ještě když nám mysl vřela jako jedna
-konvice horké vody
-čekající na rozlití
-
-možná bych  
-s dovolením
-k tomu dodal
-
-že mi schází i psaní si
-ve tři hodiny v noci 
-o strasti co se prohnala ložnicí 
-a o nutnosti větrat
-
-tři měsíce 
-tři roky
-a všechno mezi námi
-vydávající na desítky těžkých svazků  
-příběhů
-lásky
-soucitu 
-skončilo v nedohlednu 
-
-trápím se
-když si listuji stránkami plnými tebe
-a vidím jenom černou barvu 
-v obrazech o smrti 
-o neštěstí
-o chtíči 
-
-a jenom jeden úkaz
-skví se mi v deníku
-o nejkrásnější noci 
-kterou za pár let
-nejspíš vystřídá nějaká jiná
-nějaká jiná
-
-nechtěl jsem to tak 
-ani ty ne 
-ale zvolili za nás
-takže co se dá dělat
-asi vyšší moc
-já vlastně vůbec nerozumím tomu 
-jak se mohou dva lidé odcizit 
-tak rychle 
-stalo se
-
-každopádně nikdy nezapomenu na to 
-když jsem si tě šel poprvé
-trochu účelně prohlédnout
-a ty sis řekla 
-cos mi později řekla
-že sis o mně řekla
-
-jsem rád 
-že od tendencí zapomenout 
-a poněkud radikálního chtění
-vyhnat tě z hlavy pryč kulkou
-nastala odvaha sbírat 
-a sbírat se
-
-už budeš navždcky mojí součástí
-jak jenom žena může být 
-součástí muže
-
-ve skutečnosti 
-se chci jenom strašlivě moc vrátit 
-a zažít znova trochu toho poprvé
-a trochu toho nebezpečí 
-v bezpečném prostředí
-a nebýt si jistý
-jak to dopadne.`
-    },
-    { 
       nazev: 'text na překlenutí.', 
       text: `tenhle text slouží jenom k překlenutí
 k překlenutí prostoru
@@ -4847,39 +4674,6 @@ a já sledoval její neuvěřitelně hustý a rudě hnědý vlasy
 jak se jí pohupujou nad boky 
 a obrys jejího těla se nadobro vzdaloval 
 stejně jako zbytek mýho sebevědomí.`
-    },
-    { 
-      nazev: 'naše poprvé.', 
-      text: `tak jsme se poprvé milovali 
-a já se opravdu snažil vydržet co nejdéle 
-a předvést ti to všechno 
-o čem jsem týdny před tím mluvil
-a sliboval
-a naznačoval
-že předvedu 
-
-jenže jsme museli být příliš potichu
-abychom neprobudili 
-tu malou pětiletou holčičku 
-spící za dveřmi 
-které byly zabedněné jenom přistavenou skříní 
-a několika kousky mého oblečení v ní  
-
-když všechno skončilo 
-posadila ses zpola zabalená v peřině s bílými flíčky 
-a plakala jsi 
-
-vím jak jsi mě varovala
-že se ti to občas stává
-a teď jsi mě jen s mokrými tvářemi ujišťovala
-že bylo všechno dobrý
-stejně jsem se musel v duchu konejšit
-
-a říkal jsem si
-že už budu navždycky součástí tebe
-a představy už nikdy nebudou tak vzrušující
-a slova o souloži dneškem vybledla
-už TO nikdy nebude jako dřív. `
     },
     { 
       nazev: 'o psím kotci.', 
