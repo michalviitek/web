@@ -264,10 +264,6 @@ už se mi něco podobnýho dlouho nestalo, ale některý věci je dobrý si čas
 každej přelud ale zmizí, aniž by musel být tvojí součástí. připadáš si polovičatě. a když tě opouští, aniž by si tě všimla, vyrve ti jednu plíci a připraví tě taky o žaludek. ten volnej prostor už umí zpátky zaplnit jenom ona. ona, která se nevrátí. zvládneš tak maximálně zírat na místo, kde jsi ji viděl naposledy, kde ještě před chvílí stála. v duchu a s lítostí máváš tomu odjíždějícímu autobusu, ze kterýho jsi kdoví proč vystoupil. doufáš, že se objeví na druhý straně silnice, jako v nějakým filmu, ale nedává to absolutně žádnou logiku. ` 
     },
     { 
-      nazev: 'Z červenýho kruhu.', 
-      text: `vždycky mě fascinovaly ty japonský malby a dřevoryty a vůbec ten jejich místní styl. černá a červená na bílý barvě. nikdy si nejsem jistej, jestli ty borovice vystupují z mlhy a nebo se do ní noří. budiž tohle příkladem mojí fascinace. klid a vyrovnanost, ticho křičící z plátna. přelud dokonalosti. když ty obrazy vidím, je to jako bych sunul dlaň po torzu těla a cítil husí kůži. při čtení haiku na všech těch plátnech jsem. cítím petrichor, nával čerstvýho vzduchu do zadýchaný místnosti otevřeným oknem, po letním dešti…` 
-    },
-    { 
       nazev: 'Tramvajová elegie.', 
       text: `svítilna s potiskem parafy psí zamžourala naposledy pro obroušené traverzy vbité do země. kovový vřískot jí byl odpovědí, to jak tramvaj do noci pěla si, coby dvě kočky do krve se drásající o kocoura, nedbaje ze spaní vzbuzené ulice, ni měsíce kvapícího za mračnou oponu, by poslouchat nemusel. pomžilo a elektrika šine se tmou, kývaje sebou na stranu ze strany. světlušky reflektorů ji stěží předbíhají a opar černoty se co krok za ní uzavírá.
 sotva tři živáčci vezou se kamsi do dáli. vzduchem čpí po troše sladkého odér kyselosti a z patiny nejedné sedačky ční vryté podpisy. odkazy po půlnoční kreaci pro příští generaci, zdoben i strop a to od podlahy. umělci nesmírných velikostí dali ruce k dílu. mnohým projel už vůz tento. režimy, lidi, vůdce, i tratě přežil, lhostejný zůstal i k sobě samotnému, což je zde patrno.
@@ -324,13 +320,5 @@ chorá mysl, bolest duše a těla. místo motivu vraždy, motiv sebevraždy a po
 následuje krátká zpráva v regionálních plátcích a odsouzení radikálního řešení radikálně smýšlejícími, co ač neznají bytí v kůži svésmrtníka, jistě došli by k smíru jinými způsoby a znají recepty. pracovní tábory, fyzické trestání a „za našich mladých let“ často je slýchati.
 uvolnění místa, vzduchu a prostoru, nepřekážení. vzetí vlastního života poprvé a naposledy do svých ruk. ulehčení si pro nezáruku žití života. bolest v časové přímce přenesena do jednoho bodu, vzniknuvší úsečka.
 vini jsou všichni a každý z nás nejvíce. toť pozvánka do klubu svésmrtníků.` 
-    },
-    { 
-      nazev: 'Poslední list', 
-      text: `pokud hledíte na tyto řádky, již je pozdě. moje nohy tnou vzduch a dechu už mi nejspíš pomnoho nezbývá. než i ten poslední zbyteček, zapomněná zásoba živůtka z těla vyprchá a já za sebou konečně dveře zavřu, dovolím si ještě naposledy vyjádřit se, odkázat poslední slova, rozloučit se, říci nashledanou.
-ponoukám vám tímto mými texty, leč nedokončenými, jednosměrnou jízdenku do mého já, vysvětlení všeho toho humbuku a nepřátelství uplynulých několika mála dní. ačkoli se to může z některých řádek zdát, nepřijímám roli oběti, ni roli soudce, neboť mi nepřísluší. jsem podatelna příběhu a soudy jsou patrně na vás, či na někom, něčem vyšším. 
-moje jméno se těmito okamžiky stává statistikou, tělo odejde v popel či prach a má životní hra skončí na posledním řádku textu, lince času, jako bezvýznamná nitka nicu táhnoucí se mimo dějiště jevin, jeviště dějin. 
-dříve jsem to nebyl já, kdo dnes dovedl mě ke srázu. snad bych ani to zítřejší „já“ s tím dnešním srovnat nedokázal, ale žádné zítra už přes dnešek nenastane, ne pro mne, ne pro vás, ne pro nikoho. svět zanikne s mým vnímáním a co se stane pak, je jen otázkou nalezení, pochopení a výkladu mých řádek. 
-teď už jen zavřu oči a ptačí zpěv utichne, utichá, utichl. ` 
     }
   ];
