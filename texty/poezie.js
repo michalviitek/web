@@ -6016,30 +6016,6 @@ na hřbitově myšlenek svých
 ona ta jediná živá. `
     },
     { 
-      nazev: 'jsme.', 
-      text: `jsi moje vina a můj trest
-moje dobro i zlo
-jsi moje všechno a nic
-
-jsme jeden svět ve dvou
-a dva světy v jednom
-
-mezi smyslem a abstraktnem
-mezi myšlenkami a realitou
-
-mezi snem a noční můrou
-mezi nocí a dnem
-
-před propastí nad útesem
-tam stejně oba skončíme
-
-tak ať
-mně bude stačit
-že spolu…
-
-spolu.`
-    },
-    { 
       nazev: 'dobrou noc.', 
       text: `chrpy a hořce
 se západem slunce
@@ -6068,22 +6044,6 @@ otec – troska morální
 bratr – uzlíček špatných životních rozhodnutí 
 a já? 
 soubor všech těch ctností.`
-    },
-    { 
-      nazev: 'københavn.', 
-      text: `podvečerní nyhaven
-odstíny omítek nahradily  
-co podzim v prázdnu
-mezi mnou a stínem
-doma postrádal
-
-solnou rzí pokrytá kola
-přesto se matně usmívala
-oranžová krajka z cihel
-přelétla mi přes obličej
-a já se dobrovolně ztrácel
-
-a nenacházel.`
     },
     { 
       nazev: 'páchám dobro.', 
@@ -6142,26 +6102,6 @@ která směřovala
 bosé nohy v kaňkách oleje z pražců.`
     },
     { 
-      nazev: 'olůvko života.', 
-      text: `hledím kolem sebe
-nedostatku vzduchu nedbaje
-voda průzračná příjemně hřeje
-a hladina se vzdaluje
-
-sic kopu a snažím se zachytit čehosi
-jsem zatížen svou duší
-jako vlasec olůvkem
-mířím do neznámých končin
-
-tady už ani světlo není
-zima i na kosti je mi
-chci vzhůru
-proměnit se v rybu
-nechat se vylovit při rybolovu
-vytáhne mě někdo konečně?
-asi ne. `
-    },
-    { 
       nazev: 'balada šelmy psovité.', 
       text: `ke vztahům v relaci
 duchem podoben psu
@@ -6173,63 +6113,6 @@ s hyenami scházím
 živ při mršinách.`
     },
     { 
-      nazev: 'magnolie.', 
-      text: `​​padají potichu 
-květy magnolie 
-na prašnou polňačku 
-do výmolů 
-do mrtvé trávy vedle altánu
-
-jako tečky na času ose
-stává se každý z nich
-bodem v minulosti 
-
-ještě si pamatují 
-na nás dva 
-a na to co jsme dělali 
-v trávě vedle altánu 
-
-pomíjivé jsou květy magnolie 
-pomíjivá jsi ty
-a já za chvíli 
-taky pominu. `
-    },
-    { 
-      nazev: 'všechno nejlepší.', 
-      text: `je mi dnes prý osmnáct
-a včera jsem si ještě před usnutím přál
-a dneska jsem si ještě před probuzením vysnil
-od úplné rodiny 
-úplnou lásku 
-
-až na ptáky mezi břízami
-co slyším za okny 
-mě ale nikdo nepřišel vzbudit 
-a nikdo mi nepřinesl
-do postele snídani
-vítej v dospělosti
-
-dým vyhaslého rodinného krbu 
-a zdi pokryté sazemi
-štěrk zadupaný do parket
-policejními kanadami 
-melancholie ustlala peřiny 
-a to všechno dohromady 
-v prázdném domě
-
-řekl bych 
-děkuji vám že jste na mě zapomněli 
-děkuji vám že jste mě nenutili se na vás usmát 
-děkuji vám že už nejsem střetem zájmu
-děkuji že jste mě seznámili s kamarádkou na d
-
-nebudu vás rušit
-jen si dál ládujte věty o vině
-do kanonů soudních řízení 
-co trhají kusy z kusů na kusy
-ni kus rodiny zůstane.`
-    },
-    { 
       nazev: 'oprava potřeba.', 
       text: `opravte
 prosím
@@ -6237,23 +6120,6 @@ celé mé tělo
 ono by to
 opravdu chtělo
 jen o tom ještě neví. `
-    },
-    { 
-      nazev: 'poslední jarní vlaštovka.', 
-      text: `vlaštovka z kusu papíru 
-pečlivě v rukou složená 
-pečuji o ní nadmíru 
-moc pro mě totiž znamená
-
-z rukou jsem ji vypustil 
-po větru z mostu letí 
-tohle je zajímavé pojetí 
-existence a bytí
-
-s čistým svědomím odcházím 
-všechno co moh jsem udělal 
-abych zabránil všem nesnázím 
-stejně jednou spadnout musela.`
     },
     { 
       nazev: 'odpad.', 
