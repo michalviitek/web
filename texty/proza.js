@@ -239,34 +239,47 @@ Na ulici nikoho ani nenapadlo otáčet se za ním, i když jeho chůze po dlaže
       nazev: 'Taky měl občas nějaký sny.', 
       text: `Vzbudil se zrovna když sluníčko svítilo, kytičky voněly a ptáčci zpívali. 
 Myslel na svých sto milionů. Představoval si, jak si je jde konečně vyzvednout, ať už se pro podobný prachy chodí kamkoliv. Taky si představoval, jak má konečně po těch mnoha úmorných letech úsměv na tváři. Představoval si, za co všechno utrácí, jak investuje, staví nemovitost, kupuje letenky z destinace do destinace, daruje na charitu pro nemocné děti, zase investuje, jde do obchodu a dělá normální nákup, aniž by vyhledával slevové akce. Myslel na to, jak jsou všechny jeho životní problémy vyřešené, jak si prostě žije bez starostí a bez ohlížení na svoje aktuálně poloprázdné kapsy.
+
 Všechny představy byly hezky konkrétní. V puse cítil chuť drinku s paraplíčkem a na tvářích ho řezal vánek od severských fjordů. Viděl slunce zapadající do mořské hladiny a taky se mu postavil, ze všech těch holek, který teď začnou jevit zájem. Postavil se mu taky z představy nekonečný samoty. Myslel na to, jak si konečně sedne na verandě, před svojí malou roubenkou, na klíně mu bude usínat kocour a někde uprostřed lesa bude pozorovat pobíhající srnky a divočáky a lišky a mravence a kdoví co ještě. Bude mít domov. A bude mít cokoliv a kdykoliv.
+
 Tak si ležel dál ve svý rozvrzaný posteli, která je pro jednoho moc velká a pro dva moc malá. Myslel na svých sto milionů a poslouchal, jak ptáčci zpívají, cítil, jak kytičky voní, zatímco ho to zkurvený slunce pálilo do očí. Postel totiž před lety postavil přímo pod okna směřující na východ. Neměl na to změnit svoje palčivé životní rozhodnutí. Ta okna byla tím jediným pravým důvodem, pro který ještě stále vstával. Špatně umístěná postel, s nohama k východu. A taky měl občas nějaký sny.` 
     },
     { 
       nazev: 'Malý, nazelenalý, tvrdý a správně kyselý švestky.', 
-      text: `Mám rád kyselý švestky a tak si tady teď sedím, s nohama na stole, pojídám si ty malý, nazelenalý, tvrdý a správně kyselý švestky, čímž si krátím čekání na bouřku, která doufám co nevidět přijde. Už se blýská. Bouřky jsou fajn, poslední dobou si taky čím dál víc užívám tmu. Ještě víc, než kdy dřív. Je klid. Všechno je čistý, bez lidí, bez pohybu a zbytečný existence, která jenom zahlcuje ulice a cesty a tak nějak všechno. Když je bouřka, vmísí se do toho potemnělýho klidu smršť zvuků a pohybu a energie. Je tma a je světlo a tma a světlo a mokro. Nejspíš o tom už psala každá druhá spisovatelská nula. Takže tady je bezvýznamnej popis bouřky od jedný další. 
-Právě mi došly švestky a zároveň jich mám plný břicho. To jsou mi paradoxy. Ale k čemu jsou mi švestky v břiše? Už z nich nebudu mít nic. Žádnej požitek. Žádná přidaná hodnota. Chuťový pohárky se můžou jít klouzat. Je mi jedno, co z těch švestek bude mít zbytek těla. Teď už je jenom vysrat. To si nejspíš nechám na zítra, nebo na dnešek, už je po půlnoci. Co teď? Měl bych si najít nějakou mužnou zábavu muže s mužně oholenou hrudí. 
-Poezie je mrtvá a mě občas zvou básníkem. Nejspíš jsem teda mrtvej, což by mýmu aktuálnímu stavu i docela odpovídalo. Ani se nehnu, ale na to, že jsem mrtvej, vyhrávám celkem slušný peníze na sázkách. Je sobota večer, pořád je skoro třicet stupňů a venku zvučí ten hnusnej hmyz, kterej nikdo nikdy neviděl, ale stejně vydává zvuky. Je všude kolem. 
+      text: `Mám rád kyselý švestky a tak si tady teď sedím, s nohama na stole, pojídám si ty malý, nazelenalý, tvrdý a správně kyselý švestky, čímž si krátím čekání na bouřku, která doufám co nevidět přijde. Už se blýská. Bouřky jsou fajn, poslední dobou si taky čím dál víc užívám tmu. Ještě víc, než kdy dřív. Je klid. Všechno je čistý, bez lidí, bez pohybu a zbytečný existence, která jenom zahlcuje ulice a cesty a tak nějak všechno. Když je bouřka, vmísí se do toho potemnělýho klidu smršť zvuků a pohybu a energie. Je tma a je světlo a tma a světlo a mokro. Nejspíš o tom už psala každá druhá spisovatelská nula. Takže tady je bezvýznamnej popis bouřky od jedný další.
+	  
+Právě mi došly švestky a zároveň jich mám plný břicho. To jsou mi paradoxy. Ale k čemu jsou mi švestky v břiše? Už z nich nebudu mít nic. Žádnej požitek. Žádná přidaná hodnota. Chuťový pohárky se můžou jít klouzat. Je mi jedno, co z těch švestek bude mít zbytek těla. Teď už je jenom vysrat. To si nejspíš nechám na zítra, nebo na dnešek, už je po půlnoci. Co teď? Měl bych si najít nějakou mužnou zábavu muže s mužně oholenou hrudí.
+
+Poezie je mrtvá a mě občas zvou básníkem. Nejspíš jsem teda mrtvej, což by mýmu aktuálnímu stavu i docela odpovídalo. Ani se nehnu, ale na to, že jsem mrtvej, vyhrávám celkem slušný peníze na sázkách. Je sobota večer, pořád je skoro třicet stupňů a venku zvučí ten hnusnej hmyz, kterej nikdo nikdy neviděl, ale stejně vydává zvuky. Je všude kolem.
+
 Souběžně běží čtyři turnaje smíšených bojových umění a já je sleduju, Přepínám mezi zápasama a přicházím o peníze, respektive inkasuju. zrovna se mi povedlo vyhrát trojnásobek ze tří sázek, to když všechny z těch zápasů skončily v podobnej čas. Dva na bodový rozhodnutí a ten třetí úderem kolena do hlavy. Zrovna jsem měl to štěstí vidět tu vraždu živě. Chlápek co padal k zemi se nejspíš cítil podobně jako já, prohrál v první minutě a vypadal dost bezvládně, až mrtvě. Přitom se do zápasu vrhnul s elánem a motivací. To je další podobnost - já taky nemám zrovna velkou motivaci ve věcech pokračovat, když se serou. I za prohru dostal ten zápasník nějaký peníze a já sázel proti němu. Oba mrtvý, oba živý, oba v balíku. Takhle si tu každej den prohrávám. Dokud to tak půjde i s penězma, ještě se tady na to asi nevykašlu úplně. 
+
 Ta  bouřka přišla až v půl třetí. Zápasy skončily a já zůstal dvacet korun v plusu. mám hlad a nemám žádný švestky.` 
     },
     { 
       nazev: 'Kavárenský povalečky.', 
-      text: `Občas se mi při práci v kavárně povede natrefit na jistej typ zákaznic. Tyhle ženský chodí do kaváren o samotě, ve větším počtu, s rodinou, s kamarádkama, nebo z donucení s někým, od koho dostali stý pozvání a už jim přišlo blbý ho odmítat. Nic z toho ale není podstatný. Chci teď psát o holkách, který vrhaj protáhlý pohledy s takovou kadencí, že by pro ně našly uplatnění i v armádě. Posílají po nich jenom zlehka potlačovanou touhu po rozhovoru, touhu po vzrušení, a každopádně touhu po tom, abych je po zavíračce, kdy konečně zhasnu světla, zlomil v pase o barovej pult, serval z nich někdy až moc přiléhavý kalhoty a vymrdal z nich všechny vnitřnosti, od prdele po mozek. 
+      text: `Občas se mi při práci v kavárně povede natrefit na jistej typ zákaznic. Tyhle ženský chodí do kaváren o samotě, ve větším počtu, s rodinou, s kamarádkama, nebo z donucení s někým, od koho dostali stý pozvání a už jim přišlo blbý ho odmítat. Nic z toho ale není podstatný. Chci teď psát o holkách, který vrhaj protáhlý pohledy s takovou kadencí, že by pro ně našly uplatnění i v armádě. Posílají po nich jenom zlehka potlačovanou touhu po rozhovoru, touhu po vzrušení, a každopádně touhu po tom, abych je po zavíračce, kdy konečně zhasnu světla, zlomil v pase o barovej pult, serval z nich někdy až moc přiléhavý kalhoty a vymrdal z nich všechny vnitřnosti, od prdele po mozek.
+	  
 Když jim ke stolu donesu jejich kafe, můžu s klidem zaplout do bezpečí baru. Pak se ze mě stává ten největší tvrďák v místnosti a aby taky ne. Ty holky maj v očích napsaný, že se nosí na nohou s momentálně neomezenou otevírací dobu. Možná za to může osamělost. Možná závidí obsahu nekonečně dlouhý vychloubačný řeči kamarádek. Možná chtějí dát tomu frajerovy najevo, že už ho po dnešku fakt nikdy vidět nechtějí. Co já vím… i v mým výrazu ale můžou cítit příležitost k upuštění trocha frustrace. Nepromluvíme ani slovo, stejně vím, že v danej moment nejsem sám, kdo v místnosti sdílí možnost alternativní reality spočívající ve hře pro dva.
-Nakonec dochlastaj svoje kapučíno, dožerou dorty a když mi daj až nápadně vysoký dýško, za bezdůvodnýho chychotu pomalu odcházejí. Zavřou dveře a zpoza výlohy se ještě otočí, přičemž mi věnujou ten nejvyzívavější a nejdelší pohled ze všech. Když nás dělí tenká vrstva skla, mají najednou pocit bezpečí. Potom mi zmizí ze života a většinou už je nikdy neuvidím. Můžu si tak v imaginárním bločku odškrtnout, že jsem se pro jednou zase ovládl. Poslední co zbyde je fantazie. Jenomže i ta vyprchá z hlavy sakra rychle, obzvlášť když se mi do ní v kavárně nasere zrovna příchozí šéfová. Než všechny svoje myšlenky na šukání zaženu, ještě se mi s nechutí vybavuje pár scénářů. Nevím co je hnusnější, jestli varianta, kdyby se šéfový zachtělo zákaznici asistovat, nebo varianta, kdyby se jí zase tolik nechtělo. Těžko říct. 
+
+Nakonec dochlastaj svoje kapučíno, dožerou dorty a když mi daj až nápadně vysoký dýško, za bezdůvodnýho chychotu pomalu odcházejí. Zavřou dveře a zpoza výlohy se ještě otočí, přičemž mi věnujou ten nejvyzívavější a nejdelší pohled ze všech. Když nás dělí tenká vrstva skla, mají najednou pocit bezpečí. Potom mi zmizí ze života a většinou už je nikdy neuvidím. Můžu si tak v imaginárním bločku odškrtnout, že jsem se pro jednou zase ovládl. Poslední co zbyde je fantazie. Jenomže i ta vyprchá z hlavy sakra rychle, obzvlášť když se mi do ní v kavárně nasere zrovna příchozí šéfová. Než všechny svoje myšlenky na šukání zaženu, ještě se mi s nechutí vybavuje pár scénářů. Nevím co je hnusnější, jestli varianta, kdyby se šéfový zachtělo zákaznici asistovat, nebo varianta, kdyby se jí zase tolik nechtělo. Těžko říct.
+
 Nemějte mi za zlý, jaký představy v hlavě chovám. Nakonec jsou to moje představy a vy se svým názorem můžete jít třeba do prdele. A hlavně, nebuďte pokrytci. Moje myšlenkový ženský nejsou jenom chodící kundy z povídek, který si člověk může přečíst v ulepenejch časopisech, nebo na webech, co člověka od čtení odpuzujou nejen obsahem, ale už samotným vzezřením. Vím moc dobře, že moje představy jsou často i v hlavách těch zákaznic. A opět - nemusí o tom ani mluvit, pokud teda nepostrádají talent na převádění představ do praxe. Takže se občas prostě může stát, že ta, která si u vás jeden den dávala kafe, klečí druhej den pod pultem, zatímco ji při tom povzbudivě taháte za vlasy a usmíváte se na lidi procházející za výlohou.` 
     },
     { 
       nazev: 'Zrzky.', 
       text: `když se píše o zrzkách, hned je oheň na střeše. problém spočívá  v tom, že žádnej psací stroj nedokáže zaplanout tak, jako okolí v přítomnosti jedný z nich. neumím napsat text ani s půlkou toho náboje, kterej nosívají v očích. ty bývají modrý, jsou podobný jediný kapce vody, která za rok spadne na sahaře. maj barvu tajících ledovců na islandu, nebo jsou zoufale modrý, jako kůže utonulýho člověka. není nic hezčího, než když se ti vedle jedný takový v přeplněným autobuse rozklepou kolena. cítíš se slabej, ten pocit miluješ a chceš milovat i tu holku.
+	  
 už se mi něco podobnýho dlouho nestalo, ale některý věci je dobrý si čas od času připomenout, to aby člověk nezapomněl jak se věci mají a jaký to je,  když ho fyzicky ovládne něčí blízkost. je to kvetoucí louka v betonovým moři. jsou to padající třešně do uschlý trávy.
+
 každej přelud ale zmizí, aniž by musel být tvojí součástí. připadáš si polovičatě. a když tě opouští, aniž by si tě všimla, vyrve ti jednu plíci a připraví tě taky o žaludek. ten volnej prostor už umí zpátky zaplnit jenom ona. ona, která se nevrátí. zvládneš tak maximálně zírat na místo, kde jsi ji viděl naposledy, kde ještě před chvílí stála. v duchu a s lítostí máváš tomu odjíždějícímu autobusu, ze kterýho jsi kdoví proč vystoupil. doufáš, že se objeví na druhý straně silnice, jako v nějakým filmu, ale nedává to absolutně žádnou logiku. ` 
     },
     { 
       nazev: 'Tramvajová elegie.', 
       text: `svítilna s potiskem parafy psí zamžourala naposledy pro obroušené traverzy vbité do země. kovový vřískot jí byl odpovědí, to jak tramvaj do noci pěla si, coby dvě kočky do krve se drásající o kocoura, nedbaje ze spaní vzbuzené ulice, ni měsíce kvapícího za mračnou oponu, by poslouchat nemusel. pomžilo a elektrika šine se tmou, kývaje sebou na stranu ze strany. světlušky reflektorů ji stěží předbíhají a opar černoty se co krok za ní uzavírá.
+	  
 sotva tři živáčci vezou se kamsi do dáli. vzduchem čpí po troše sladkého odér kyselosti a z patiny nejedné sedačky ční vryté podpisy. odkazy po půlnoční kreaci pro příští generaci, zdoben i strop a to od podlahy. umělci nesmírných velikostí dali ruce k dílu. mnohým projel už vůz tento. režimy, lidi, vůdce, i tratě přežil, lhostejný zůstal i k sobě samotnému, což je zde patrno.
+
 zabořen v textilu při aktivitě sedavé, zrakem v blbu, brouzdaje prázdnem vozu, vytržen z půlnočního kolotoče úvah třeskem skla plzeňského o podlahu… podivunehodné stvoření vydávající zvuky člověčího zoufalství v duetu střídané nelidskou lhostejností. i to je tu k mání. a jeden by řekl, že i já mám tu čest být ignorován okolím, o změnu nežádaje, na rozdíl od poety sedícího pár sedaček ode mě. desperátem po soumraku, sotvazletilý, mířím pryč od problémů, aby mě lapili. jednoho dne, konečně snad vyveze mě tahle tramvaj, ze smyčky obratiště.` 
     },
     { 
@@ -276,14 +289,19 @@ zabořen v textilu při aktivitě sedavé, zrakem v blbu, brouzdaje prázdnem vo
     { 
       nazev: 'Lidská bytost na K.', 
       text: `po jaře minulém, hnízdo vězí na stromě a o kousek výš, pytlík z igelitu. první žluťásek – bohatství z bakelitu – se mezi něčím, co listem buku bylo, snese, kam vítr nese chudobu, na koleni přistane mi.
+	  
 málo housenek urodilo se, rok co rok, pak letos vysmíváni v líce, a oligarcha v žlutém fraku létajíce do soumraku zase zmizí. bez úroků, nároku na důchod, dětí ve vaku či prostě jen zapomenutých myšlenek, jež v noci sužují, a jedinců co pokoj nedají ani ve dne. jednou takovou lidskou bytostí, nenechán v náruč skal, kde věčně uchován chtěl jsem zůstati. toť společné s tím motýlem je míti mi, leč scházejí mi křídla, nárok na rozmyšlenou po vzlétnutí. 
+
 víra v důvody a dospělost co v obličeji hledá vrásky marně. toť ona zachránkyně, či důvod plané zkázy? podléhá každý té, bez ohledu na smysl, na přání, na nesnázi. svěřit se, je jako mluvit s kostkou čísel, od jedné do šesti. trojka hozena, zdá se býti dvím, jalové ve zlatě či achát z rukou překupníka. dlím v pochybě, zda nabídnuté ruky vzdáti se, přejít ji bez povšimnutí… či uchopit a tahat doufaje, že se neocitne tam, kde já bývaje, nebylo hezky. 
+
 sotva objektem, jen mnohou z tváří človíčka, „hezká,“ jeden odplivne si. a s touhou těkavou, čekám na cíl debaty o sobeckosti. sluníčko chodící a zakrnělý úsměv snad i v komatu. nevěřím, či věřiti se nechce? přesto zpověď vedu. o jednu oběť víc než tu neslavnou nulu, pojmou zřejmě má milá úbočí. do obličeje slzy u rakve derou se, v davu, co leč pozdě, přeci se „zajímal“ a kol jich jedna, co odmítnutou paži podává ztěžklou a přeci drží dál.` 
     },
     { 
       nazev: 'Oxymoron bytí.', 
       text: `jak jen to říci, že já – protimluv – pachtiv se v díži rozbředlého sebe sama, vlastně vůbec nemám tucha, tedy netuším nic, až na „pochybuji.“ vyčítání počíná činem minuvším přítomnost a pak se mi divte, že jsem takový. pokaždé jiný, leč jsem to já, snažící se zavděčit, pomoci, dvě tři věty říci, odmlčet se a nezapadnout, pouze padat v nicotu noci, temnot peřin a myšlenek o nenotnosti žití svého, bdít jako ranní mrtvola. a jako ta pak hnitím kazit výrazy obecenstva, co se svou nevinou připlete do mých cest.
+	  
 ač tělo člověka, podpovrchní vlastnosti jaksi rozličné od onoho druhu. poddruhem živočicha, jenž dá jen na skořápku – tak proto stále jsem tu, nerozlousknutý. jakpak kutálet se světem a stále ze svahu, když pod ním čeká kámen, jistě tvrdší, než má hlava, nátura? a recept neznám. za toliko dvacet let. co je však těch v pusté historii? co jeden je v davu? ztroskotalá minulost, prázdno v čase. a jeden a jedna v davu jsou dva, z čehož pak vzcházejí tři, někdy čtyři, když je na nájem. vychovat, osamět, nechat se okrást a za úmlčné si zubní protézu obstarat, pokud se dožijí. to že je podstata? že možno hledat jinde? absurdita nosí se namísto významu místní prezence. 
+
 přejde to, bylo mi slýchati. že po noci je den a jasno po mlze. pak jest tím příběhem jen zřít záda osoby řkoucí zatracení, jako školačka po defloraci vidí amanta. bez vysvětlení.
 není mi pomoci, jsem oxymoron bytí.` 
     },
@@ -291,33 +309,43 @@ není mi pomoci, jsem oxymoron bytí.`
       nazev: 'Prší.', 
       text: `z lidu déšť konečně skápl božskou. krčíce se, neb mu to gumová záda dovolují, mizí v kapucích značkových, jež vůkol ceně brzy promoknou, v pasážích domů, za mřížemi bran. 
 skryté tváře v křeči, úmoru z vlhkého počasí a snad i z nálady, že práce nevynáší, že duch boží se vznáší jaksi jinde, nežli nad hlavou zdejší, tomu, či onomu příslušící.
+
 stěžují si těm co poslouchají, ač není kdo by naslouchal. takže nesmutní lid, jen v zátiší pochoduje po topících se hlavách kočičích, jež po nocích vlčí a nalhává si slunce mezi mraky a správnost úsudku a vtip důvtipu a užitek záměru a nalhává si o rok více v blahobytu a o pár let vůbec a nalhává si život po smrti a nalhává si, nalhává si, nalhává si bytí při přežívání.
+
 já už si nenalhávám, jen čekám na ránu z milosti. ` 
     },
     { 
       nazev: 'Den po dni dětí.', 
       text: `den po dni dětí a zúčtování dobrých časů. po rozkvětu kapes, hnití charakteru. 
 účetní v taláru klade otázky, dychtivý odpovědí. výpovědí dáme vědět, že vina nelpí na našich bedrech, snad na bedru toho druhého, jenž po našem boku na lavici obžalovaných svá bedra maže si voltarenem. 
+
 obhájci s obžalobou mění lež za lež nevýhodnou směnkou, sami přesvědčují se o opaku, to kvůli pocitu z výhry. v síni to jen hřmí a strany tasí těžké kalibry argumentů, důkazy bez důkazu, kryjí si vlastní zadky. diváci se baví nad cizím neštěstím, nad cizí hloupostí, při vší své plytkosti, nepřipouští si, že by si jednou mohli vyměnit sedačky. 
 výsledek nejasný. 
+
 mezitím doma, v prázdném ovzduší, houpe se na stranu ze strany, při klice od koupelny, čísi upřímná hlava. ` 
     },
     { 
       nazev: 'Svět se změnil.', 
       text: `svévlastní dějiny ve svazku se zkušeností plodí ideje, jež nakonec ústí mě k činům. myšlenky beze slov byly by pouhou neznámou, v leč možno bohaté, ba abstraktní cizině, kde se jako prázdné džbány po sešlostech póvl slov bez činu povaluje a kde čin, jemuž schází myšlenka, stal se jen nástrojem ku slepému přežívání na den ze dne. nechci dvakrát převracet už jednou přečtený list, ale jednou, naposledy, ohlédnout se nutno je mi. zavřít oči, semknout rty, drtit zuby mezi dásněmi a vzpomínky vybavit si, na dny kdy malichernost zvolena za vládkyni byla.
 vše započato velkým písmenem s koncem v bodě tečky, jež málo místa zabere, ale mnohé znamená. kdo by stál o život končící otazníkem? obsahy závěrů jen po formě liší se a zánik v čase není vyhnutelný, to na stať je možné, ba nutné se ptát. než se tedy někdo otáže nahlas, já odpovím.
+
 svět se změnil a je to snad jedna, možná dvě kopy týdnů, co místo dne a noci na nebesích hvězda s lunou svádějí hru o nadvládu a nikdo nevítězí. osa času kreslí minulost a mraky na obloze ustavičně plynou po směru větru, jen já se cítím být žulovým kamínkem vhozeným do proudu, jenž jeho vlivem erozí ztrácí.
+
 poněkud lživá jsou však slova předchozí, neboť se zeměkoule točí stále stejným směrem a rychlostí, jen křiklavé „já“ vybledlo a barvy v tubách vyschly. verše staly se pro mne svůdnou novinkou s tóny sépie a pod jejich břemenem jsem začal vnímat bytí poněkud odlišně. první věty pod mojí rukou, tuhou s odstínem antracitu psané, zašklebily se barevně, minimálně na rozdíl ode mě, měly svou tvář. navzdory kráse listů v posledním tažení, přes snové tužby barev lesa při podzimu však verši prosvítají myšlenky s vidinou mrtvosti téhož posléze. mají téměř jednoho, pro mě známého původce. těžko ale popisuje se něco, co vidět není, natož pak slyšet, cítit… něco co je mou součástí, více než vlastností, nebo rýhou v líci, na první pohled přesto neznatelné.
 a tak se sám vypravuji ponurou krajinou k vrcholkům kopců, odkud všechny své problémy zřím z nadhledu, nikoliv zkresleně. z šedého horizontu vidět je nejlépe rozdíl mezi černou a bílou, barev zde netřeba. nač se přemáhat, domýšlet si duhu, tam kde mlha vězí a bouře se chystá…
+
 byl jsem přinucen okolnostmi vzniknuvšími v tikajícím polorozpadu kořenů lidského bytí vidět šerosvitem a ač ne barvoslepý, zbytek pigmentu života na písmo použiv, píši tyto řádky. ` 
     },
     { 
       nazev: 'Klub svésmrtníků', 
       text: `není na tom nic poetického. 
 udušení, přelomení kostí, rozmačkání, přetržení končetin a vazu, rozdrcení lebky. kusy mozku tekoucí po stropě a zdi, zvratků plný jícen a plíce, přetékající vana světlé, ještě horké, pomalu chladnoucí krve. blednoucí rozpůlené torzo na pražci s vyděšeným výrazem ve tváři hlásající pozdní rozmyšlení. dveře zaseknuté o namodralý trup visící na klice. policisté dávající světu na odiv své obsahy střev, doktoři budící se ze snů, rodiče následující čin po vzoru svých potomků. odpovědní zoufalí, nevěda si rady s pocitem viny. bušící pěsti do stěny a slzy na tvářích „milujících“ osob.
-slabosti a síly onen čin nepostrádá, sobeckosti je plný, od pachatele přes viníky až po důvody. 
-chorá mysl, bolest duše a těla. místo motivu vraždy, motiv sebevraždy a podobnost slov není čistě náhodná, vždyť vražda jako vražda, vražda jako sebevražda. odplata těm, kteří bolest působili, pomsta sama sobě. 
+slabosti a síly onen čin nepostrádá, sobeckosti je plný, od pachatele přes viníky až po důvody.
+
+chorá mysl, bolest duše a těla. místo motivu vraždy, motiv sebevraždy a podobnost slov není čistě náhodná, vždyť vražda jako vražda, vražda jako sebevražda. odplata těm, kteří bolest působili, pomsta sama sobě.
+
 následuje krátká zpráva v regionálních plátcích a odsouzení radikálního řešení radikálně smýšlejícími, co ač neznají bytí v kůži svésmrtníka, jistě došli by k smíru jinými způsoby a znají recepty. pracovní tábory, fyzické trestání a „za našich mladých let“ často je slýchati.
+
 uvolnění místa, vzduchu a prostoru, nepřekážení. vzetí vlastního života poprvé a naposledy do svých ruk. ulehčení si pro nezáruku žití života. bolest v časové přímce přenesena do jednoho bodu, vzniknuvší úsečka.
 vini jsou všichni a každý z nás nejvíce. toť pozvánka do klubu svésmrtníků.` 
     }
