@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>viitek.</title>
+    <link rel="icon" type="image/png" href="ikony/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <a href="index.html" class="style-odkaz-logo">viitek.</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Filtrační sekce -->
+        <div class="filtr-obsahu">
+            <button class="style-tlacitko" id="btn-poezie">básně.</button>
+            <button class="style-tlacitko" id="btn-proza">próza.</button>
+        </div>
+
+        <!-- Dynamický kontejner pro výpis textů -->
+        <div id="content-container"></div>
+    </main>
+
+    <footer>
+        <p>© 2001 viitek</p>
+    </footer>
+
+    <!-- Načtení dat z externího adresáře / složky texty -->
+    <script src="texty/poezie.js"></script>
+    <script src="texty/proza.js"></script>
+
+    <script>
+        const btnPoezie = document.getElementById('btn-poezie');
+        const btnProza = document.getElementById('btn-proza');
+        const container = document.getElementById('content-container');
+
+        // Funkce pro zobrazení seznamu textů (ukázek)
+        function zobraziSeznam(data, typ) {
+            container.innerHTML = '';
+            
+            if (typ === 'poezie') {
+                btnPoezie.classList.add('active');
+                btnProza.classList.remove('active');
+            } else {
+                btnProza.classList.add('active');
+                btnPoezie.classList.remove('active');
+            }
+
+            data.forEach((polozka, index) => {
+                const clanek = document.createElement('article');
+                clanek.classList.add('text-blok');
+                
+                if (typ === 'poezie') {
+                    clanek.classList.add('poezie-blok');
+                } else {
+                    clanek.classList.add('proza-blok');
+                }
+
+                // Vytvoření zkráceného náhledu textu
+                let ukazka = '';
+                if (typ === 'poezie') {
+                    ukazka = polozka.text.split('\n').slice(0, 4).join('\n') + '...';
+                } else {
+                    ukazka = polozka.text.split(' ').slice(0, 80).join(' ') + '...';
+                }
+
+                // UPRAVENO: Odstraněn symbol > za textem číst dále
+                clanek.innerHTML = `
+                    <h2 class="style-nadpis">${polozka.nazev}</h2>
+                    <p class="style-text">${ukazka}</p>
+                    <button class="style-tlacitko-odkaz cist-dale-btn">číst dále</button>
+                `;
+
+                clanek.querySelector('.cist-dale-btn').addEventListener('click', () => {
+                    zobrazDetail(polozka, data, typ);
+                });
+
+                container.appendChild(clanek);
+            });
+        }
+
+        // Funkce pro zobrazení jednoho kompletního celého textu
+        function zobrazDetail(polozka, puvodniData, typ) {
+            container.innerHTML = '';
+            
+            const clanek = document.createElement('article');
+            clanek.classList.add('text-blok');
+            
+            if (typ === 'poezie') {
+                clanek.classList.add('poezie-blok');
+            } else {
+                clanek.classList.add('proza-blok');
+            }
+            
+            // UPRAVENO: Odstraněn symbol < před textem zpět
+            clanek.innerHTML = `
+                <h2 class="style-nadpis">${polozka.nazev}</h2>
+                <p class="style-text">${polozka.text}</p>
+                <button class="style-tlacitko-odkaz zpet-btn">zpět</button>
+            `;
+
+            clanek.querySelector('.zpet-btn').addEventListener('click', () => {
+                zobraziSeznam(puvodniData, typ);
+                window.scrollTo({ top: 0, behavior: 'instant' });
+            });
+
+            container.appendChild(clanek);
+            window.scrollTo({ top: 0, behavior: 'instant' });
+        }
+
+        btnPoezie.addEventListener('click', () => {
+            if (window.poezieData) zobraziSeznam(window.poezieData, 'poezie');
+        });
+        
+        btnProza.addEventListener('click', () => {
+            if (window.prozaData) zobraziSeznam(window.prozaData, 'proza');
+        });
+    </script>
+</body>
+</html>

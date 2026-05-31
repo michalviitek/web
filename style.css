@@ -1,0 +1,188 @@
+/* ==========================================================================
+   RESET & GLOBÁLNÍ STYLY
+   ========================================================================== */
+   * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: 'EB Garamond', serif;
+    background-color: #ffffff;
+    color: #1e1e1e;
+    display: flex;
+    flex-direction: column;
+    transition: background-color 0.3s, color 0.3s;
+    padding: 0 max(1.2rem, 4vw); 
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Dark Mode podpora */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #1e1e1e;
+        color: #ffffff;
+    }
+}
+
+/* ==========================================================================
+   STRUKTURA STRÁNKY (Responzivní kontejnery)
+   ========================================================================== */
+header {
+    width: 100%;
+    max-width: 720px;
+    margin: 0 auto;
+    padding: clamp(1.2rem, 4vw, 2.2rem) 0 1rem 0;
+    text-align: center;
+}
+
+.logo .style-odkaz-logo {
+    font-family: 'EB Garamond', serif;
+    font-size: clamp(1.8rem, 5.5vw, 2.4rem);
+    letter-spacing: 0.02em;
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+main {
+    flex: 1;
+    width: 100%;
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 1.5rem 0 clamp(3rem, 8vw, 5rem) 0;
+}
+
+footer {
+    width: 100%;
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 2rem 0;
+    text-align: center;
+    font-size: 0.85rem;
+    opacity: 0.5;
+}
+
+/* Kontejner pro filtrační tlačítka */
+.filtr-obsahu {
+    display: flex;
+    justify-content: center;
+    gap: clamp(1.5rem, 5vw, 2.5rem);
+    margin-bottom: clamp(1.5rem, 5vw, 3rem);
+}
+
+/* Jednotlivé textové bloky */
+.text-blok {
+    margin-top: clamp(2rem, 6vw, 3.5rem);
+    animation: fadeIn 0.4s ease-out;
+}
+
+/* --- Žánrové šířky --- */
+.proza-blok {
+    max-width: 100%;
+}
+
+.poezie-blok {
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.poezie-blok .style-text {
+    text-align: left;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(8px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* ==========================================================================
+   DEFINOVANÉ STYLY TEXTŮ A PRVKŮ
+   ========================================================================== */
+
+/* Nadpis textu (básně/prózy) */
+.style-nadpis {
+    font-size: clamp(1.15rem, 3.5vw, 1.35rem);
+    /* UPRAVENO: Nadpis textu je nyní tučný */
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 0.9rem;
+    overflow-wrap: break-word;
+    word-break: break-word;
+}
+
+/* Vlastní text (Tělo básně / prózy) */
+.style-text {
+    font-size: clamp(1rem, 2.8vw, 1.1rem);
+    line-height: 1.65;
+    margin-bottom: 1rem;
+    white-space: pre-line;
+    text-align: justify;
+    overflow-wrap: break-word;
+}
+
+/* Sjednocená funkční tlačítka a odkazy (Inter / Helvetica) */
+.style-tlacitko,
+.style-tlacitko-odkaz {
+    font-family: 'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background: none;
+    border: none;
+    font-size: clamp(0.78rem, 2.1vw, 0.84rem); 
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: lowercase;
+    color: rgba(30, 30, 30, 0.45); 
+    cursor: pointer;
+    transition: color 0.2s ease;
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* Odsazení pro odkazy "číst dále" a "zpět" */
+.style-tlacitko-odkaz {
+    display: inline-block;
+    padding: 0.4rem 0;
+    text-decoration: none;
+}
+
+/* Tmavý režim pro základní šedou barvu prvků */
+@media (prefers-color-scheme: dark) {
+    .style-tlacitko,
+    .style-tlacitko-odkaz {
+        color: rgba(255, 255, 255, 0.45);
+    }
+}
+
+/* Hover a Aktivní stav */
+.style-tlacitko:hover,
+.style-tlacitko.active,
+.style-tlacitko-odkaz:hover {
+    color: #fddc5c;
+}
+
+/* ==========================================================================
+   MÉDIA DOTAZY PRO EXTRÉMNÍ ZAŘÍZENÍ
+   ========================================================================== */
+@media (max-width: 600px) {
+    .proza-blok .style-text {
+        text-align: left;
+    }
+}
+
+@media (min-width: 1400px) {
+    body {
+        font-size: 100%; 
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .text-blok {
+        animation: none;
+    }
+}
