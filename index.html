@@ -19,13 +19,11 @@
     </header>
 
     <main>
-        <!-- Filtrační sekce -->
         <div class="filtr-obsahu">
             <button class="style-tlacitko" id="btn-poezie">básně.</button>
             <button class="style-tlacitko" id="btn-proza">próza.</button>
         </div>
 
-        <!-- Dynamický kontejner pro výpis textů -->
         <div id="content-container"></div>
     </main>
 
@@ -33,7 +31,6 @@
         <p>© 2001 viitek</p>
     </footer>
 
-    <!-- Načtení dat z externího adresáře / složky texty -->
     <script src="texty/poezie.js"></script>
     <script src="texty/proza.js"></script>
 
@@ -72,7 +69,6 @@
                     ukazka = polozka.text.split(' ').slice(0, 80).join(' ') + '...';
                 }
 
-                // UPRAVENO: Odstraněn symbol > za textem číst dále
                 clanek.innerHTML = `
                     <h2 class="style-nadpis">${polozka.nazev}</h2>
                     <p class="style-text">${ukazka}</p>
@@ -100,7 +96,6 @@
                 clanek.classList.add('proza-blok');
             }
             
-            // UPRAVENO: Odstraněn symbol < před textem zpět
             clanek.innerHTML = `
                 <h2 class="style-nadpis">${polozka.nazev}</h2>
                 <p class="style-text">${polozka.text}</p>
